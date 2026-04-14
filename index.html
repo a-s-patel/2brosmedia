@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+       PRIMARY META TAGS
+  ============================================================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2Bros Media | Creative Agency That Actually Delivers</title>
+  <meta name="description" content="2Bros Media is a creative agency that makes your brand look rich. Branding, web design, social media, video production, and paid ads — done right, done loud.">
+  <meta name="keywords" content="creative agency, branding, web design, social media management, video production, paid ads, SEO, content strategy">
+  <meta name="author" content="2Bros Media">
+  <link rel="canonical" href="https://2bros.click/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://2bros.click/">
+  <meta property="og:title" content="2Bros Media | Creative Agency That Actually Delivers">
+  <meta property="og:description" content="We make your brand look rich. Branding, web, social, video — done right, done loud.">
+  <meta property="og:image" content="https://2bros.click/assets/images/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@2brosmedia">
+  <meta name="twitter:title" content="2Bros Media | Creative Agency That Actually Delivers">
+  <meta name="twitter:description" content="We make your brand look rich. Branding, web, social, video — done right, done loud.">
+  <meta name="twitter:image" content="https://2bros.click/assets/images/og-image.jpg">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "2Bros Media",
+    "description": "Creative media agency specializing in branding, web design, social media, and video production.",
+    "url": "https://2bros.click",
+    "logo": "https://2bros.click/assets/images/logo.svg",
+    "sameAs": [
+      "https://instagram.com/2brosmedia",
+      "https://linkedin.com/company/2brosmedia"
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- ============================================================
+       CRITICAL ABOVE-THE-FOLD CSS (inlined for performance)
+  ============================================================ -->
+  <style>
+    /* ---- RESET & BASE ---- */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--color-bg);
+      color: var(--color-white);
+      font-family: var(--font-body);
+      font-size: 17px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    button { cursor: pointer; border: none; background: none; font: inherit; }
+
+    /* ---- CSS VARIABLES ---- */
+    :root {
+      --color-bg:        #050f0a;
+      --color-surface:   #0a1f13;
+      --color-surface-2: #0f2b1a;
+      --color-emerald:   #00c853;
+      --color-emerald-dim: #00a844;
+      --color-gold:      #ffd700;
+      --color-white:     #f0f8f2;
+      --color-muted:     #7a9b82;
+      --color-border:    #1a3524;
+      --color-danger:    #ff3b30;
+
+      --font-display: 'Bebas Neue', 'Impact', sans-serif;
+      --font-body:    'DM Sans', 'Helvetica Neue', sans-serif;
+      --font-mono:    'JetBrains Mono', monospace;
+
+      --nav-h: 72px;
+      --section-pad: clamp(80px, 10vw, 140px);
+      --container: 1200px;
+      --gutter: clamp(20px, 5vw, 60px);
+      --radius: 4px;
+      --radius-lg: 12px;
+    }
+
+    /* ---- NAV — CRITICAL ---- */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      height: var(--nav-h);
+      display: flex;
+      align-items: center;
+      padding: 0 var(--gutter);
+      transition: background 0.3s ease, backdrop-filter 0.3s ease, border-bottom 0.3s ease;
+    }
+    .nav.scrolled {
+      background: rgba(5, 15, 10, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .nav-inner {
+      width: 100%;
+      max-width: var(--container);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .nav-logo-mark {
+      width: 36px;
+      height: 36px;
+      background: var(--color-emerald);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 18px;
+      color: var(--color-bg);
+      letter-spacing: -1px;
+    }
+    .nav-logo-text {
+      font-family: var(--font-display);
+      font-size: 22px;
+      letter-spacing: 0.05em;
+      color: var(--color-white);
+    }
+    .nav-logo-text span { color: var(--color-emerald); }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+    }
+    .nav-links a {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+      transition: color 0.2s;
+    }
+    .nav-links a:hover,
+    .nav-links a.active { color: var(--color-white); }
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    /* ---- HERO — CRITICAL ---- */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      overflow: hidden;
+      padding-top: var(--nav-h);
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 70% 60% at 60% 40%, rgba(0,200,83,0.12) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 50% at 10% 80%, rgba(0,200,83,0.06) 0%, transparent 60%),
+        var(--color-bg);
+      z-index: 0;
+    }
+    .hero-grid-overlay {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,200,83,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,200,83,0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      z-index: 0;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: var(--container);
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 var(--gutter);
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+  </style>
+
+  <!-- Defer non-critical CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+============================================================ -->
+<nav class="nav" id="main-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+
+    <!-- Logo -->
+    <a href="index.html" class="nav-logo" aria-label="2Bros Media — Home">
+      <div class="nav-logo-mark" aria-hidden="true">2B</div>
+      <span class="nav-logo-text">2BROS <span>MEDIA</span></span>
+    </a>
+
+    <!-- Desktop Links -->
+    <ul class="nav-links" role="list">
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="results.html">Results</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+
+    <!-- CTA + Hamburger -->
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary" style="display:none" id="nav-cta-desktop">Apply For Greatness →</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <button class="mobile-menu-close" id="mobile-close" aria-label="Close menu">✕</button>
+  <nav>
+    <ul class="mobile-menu-links" role="list">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="results.html">Results</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <a href="contact.html" class="btn btn-primary mobile-menu-cta">Apply For Greatness →</a>
+  </nav>
+</div>
+
+
+<!-- ============================================================
+     HERO SECTION
+============================================================ -->
+<section class="hero" id="hero" aria-labelledby="hero-headline">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Floating accent shapes -->
+  <div class="hero-accent hero-accent--1" aria-hidden="true"></div>
+  <div class="hero-accent hero-accent--2" aria-hidden="true"></div>
+
+  <div class="hero-content">
+
+    <!-- Pre-headline tag -->
+    <div class="section-tag hero-pretag" data-animate="fadeUp">// THE AGENCY THAT ACTUALLY DELIVERS</div>
+
+    <!-- Main Headline -->
+    <h1 class="hero-headline" id="hero-headline" data-animate="fadeUp" data-animate-delay="100">
+      WE MAKE<br>
+      <em class="hero-headline-em">YOU LOOK</em><br>
+      <span class="hero-headline-rich">RICH.</span>
+    </h1>
+
+    <!-- Sub-copy -->
+    <p class="hero-sub" data-animate="fadeUp" data-animate-delay="200">
+      Branding. Web. Social. Video. Ads. — <strong>Done right. Done loud.</strong><br>
+      Your brand, but actually good.
+    </p>
+
+    <!-- CTAs -->
+    <div class="hero-ctas" data-animate="fadeUp" data-animate-delay="300">
+      <a href="contact.html" class="btn btn-primary btn-lg">Apply For Greatness →</a>
+      <a href="portfolio.html" class="btn btn-outline btn-lg">See the Proof</a>
+    </div>
+
+    <!-- Hero Stats Strip -->
+    <div class="hero-stats" data-animate="fadeUp" data-animate-delay="400">
+      <div class="hero-stat">
+        <span class="hero-stat-num" data-counter="47">0</span>
+        <span class="hero-stat-label">Brands Leveled Up</span>
+      </div>
+      <div class="hero-stat-divider" aria-hidden="true"></div>
+      <div class="hero-stat">
+        <span class="hero-stat-num"><span data-counter="2.3">0</span>M</span>
+        <span class="hero-stat-label">In Client Revenue</span>
+      </div>
+      <div class="hero-stat-divider" aria-hidden="true"></div>
+      <div class="hero-stat">
+        <span class="hero-stat-num"><span data-counter="12">0</span></span>
+        <span class="hero-stat-label">Industries Owned</span>
+      </div>
+      <div class="hero-stat-divider" aria-hidden="true"></div>
+      <div class="hero-stat">
+        <span class="hero-stat-num"><span data-counter="100">0</span>%</span>
+        <span class="hero-stat-label">Delivered Different</span>
+      </div>
+    </div>
+
+  </div><!-- /hero-content -->
+
+  <!-- Scroll indicator -->
+  <div class="hero-scroll" aria-hidden="true">
+    <span class="hero-scroll-label">SCROLL</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+
+</section><!-- /hero -->
+
+
+<!-- ============================================================
+     MARQUEE — BUZZWORD TICKER
+============================================================ -->
+<div class="marquee-section" aria-hidden="true">
+  <div class="marquee-wrapper">
+    <div class="marquee-track">
+      <span class="marquee-item">BRAND IDENTITY</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">WEB DESIGN</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">SOCIAL MEDIA</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">VIDEO PRODUCTION</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">PAID ADS</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">SEO &amp; CONTENT</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">PHOTOGRAPHY</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">BRAND STRATEGY</span>
+      <span class="marquee-dot">✦</span>
+      <!-- Duplicate for seamless loop -->
+      <span class="marquee-item">BRAND IDENTITY</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">WEB DESIGN</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">SOCIAL MEDIA</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">VIDEO PRODUCTION</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">PAID ADS</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">SEO &amp; CONTENT</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">PHOTOGRAPHY</span>
+      <span class="marquee-dot">✦</span>
+      <span class="marquee-item">BRAND STRATEGY</span>
+      <span class="marquee-dot">✦</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================================================
+     SOCIAL PROOF BAR
+============================================================ -->
+<section class="proof-bar" aria-label="Social proof and client statistics">
+  <div class="container">
+    <div class="proof-bar-inner">
+
+      <div class="proof-stat" data-animate="fadeUp">
+        <span class="proof-stat-num" data-counter="47">0</span>
+        <span class="proof-stat-label">Brands Leveled Up</span>
+      </div>
+      <div class="proof-divider" aria-hidden="true"></div>
+      <div class="proof-stat" data-animate="fadeUp" data-animate-delay="80">
+        <span class="proof-stat-num">$<span data-counter="2.3">0</span>M</span>
+        <span class="proof-stat-label">Client Revenue Generated</span>
+      </div>
+      <div class="proof-divider" aria-hidden="true"></div>
+      <div class="proof-stat" data-animate="fadeUp" data-animate-delay="160">
+        <span class="proof-stat-num"><span data-counter="347">0</span>%</span>
+        <span class="proof-stat-label">Avg. Engagement Lift</span>
+      </div>
+      <div class="proof-divider" aria-hidden="true"></div>
+      <div class="proof-stat" data-animate="fadeUp" data-animate-delay="240">
+        <span class="proof-stat-num"><span data-counter="12">0</span></span>
+        <span class="proof-stat-label">Industries Dominated</span>
+      </div>
+      <div class="proof-divider" aria-hidden="true"></div>
+      <div class="proof-stat" data-animate="fadeUp" data-animate-delay="320">
+        <span class="proof-stat-num"><span data-counter="0">0</span></span>
+        <span class="proof-stat-label">Boring Brands Made</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     PROBLEM / AGITATION SECTION
+============================================================ -->
+<section class="problem-section section-pad" aria-labelledby="problem-headline">
+  <div class="container">
+
+    <div class="problem-layout">
+
+      <!-- Left: The indictment -->
+      <div class="problem-left" data-animate="fadeUp">
+        <span class="section-tag">// THE TRUTH</span>
+        <h2 class="problem-headline" id="problem-headline">
+          YOUR BRAND<br>IS INVISIBLE.
+        </h2>
+        <div class="problem-accent-line" aria-hidden="true"></div>
+      </div>
+
+      <!-- Right: The breakdown -->
+      <div class="problem-right">
+        <p class="problem-intro" data-animate="fadeUp" data-animate-delay="80">
+          Your competitors are eating. You're watching. That ends today.
+        </p>
+
+        <div class="problem-points" data-stagger>
+          <div class="problem-point" data-animate="fadeUp">
+            <div class="problem-point-icon" aria-hidden="true">✗</div>
+            <div>
+              <h3 class="problem-point-title">Your website looks like it was built in 2014</h3>
+              <p class="problem-point-desc">First impressions cost clients. A bad website is a "do not enter" sign with your logo on it.</p>
+            </div>
+          </div>
+          <div class="problem-point" data-animate="fadeUp">
+            <div class="problem-point-icon" aria-hidden="true">✗</div>
+            <div>
+              <h3 class="problem-point-title">Your brand has no identity — just vibes</h3>
+              <p class="problem-point-desc">Canva templates and inconsistent logos don't build trust. They build confusion.</p>
+            </div>
+          </div>
+          <div class="problem-point" data-animate="fadeUp">
+            <div class="problem-point-icon" aria-hidden="true">✗</div>
+            <div>
+              <h3 class="problem-point-title">Your social media is a ghost town</h3>
+              <p class="problem-point-desc">Inconsistent posting. Zero strategy. Crickets. Your audience exists — you just haven't shown up for them.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="problem-solution" data-animate="fadeUp" data-animate-delay="320">
+          <span class="problem-solution-label">THE FIX →</span>
+          <p>We build brands that command attention, websites that convert, and content that makes people stop scrolling. <strong>We fix that.</strong></p>
+          <a href="services.html" class="btn btn-outline" style="margin-top:20px">See The Arsenal →</a>
+        </div>
+
+      </div><!-- /problem-right -->
+
+    </div><!-- /problem-layout -->
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SERVICES PREVIEW
+============================================================ -->
+<section class="services-section section-pad" aria-labelledby="services-headline">
+  <div class="container">
+
+    <div class="section-header" data-animate="fadeUp">
+      <span class="section-tag">// WHAT WE DO</span>
+      <h2 class="section-headline" id="services-headline">THE ARSENAL</h2>
+      <p class="section-sub">Six weapons. One goal: make you impossible to ignore.</p>
+    </div>
+
+    <div class="services-grid" data-stagger>
+
+      <!-- Service 1: Brand Identity -->
+      <article class="service-card" data-animate="fadeUp" aria-label="Brand Identity service">
+        <div class="service-card-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M16 4L28 10V22L16 28L4 22V10L16 4Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <circle cx="16" cy="16" r="4" fill="currentColor"/>
+          </svg>
+        </div>
+        <span class="service-card-tag">01</span>
+        <h3 class="service-card-title">Brand Identity</h3>
+        <p class="service-card-desc">Stop looking like a Canva template. We build the full visual system — logo, colors, typography, voice — that makes you unmistakable.</p>
+        <ul class="service-card-list" aria-label="Brand Identity deliverables">
+          <li>Logo system &amp; brand marks</li>
+          <li>Color &amp; typography system</li>
+          <li>Brand guidelines document</li>
+          <li>Social media kit</li>
+        </ul>
+        <a href="services.html#brand-identity" class="service-card-link" aria-label="Learn more about Brand Identity">Learn More →</a>
+      </article>
+
+      <!-- Service 2: Web Design -->
+      <article class="service-card" data-animate="fadeUp" aria-label="Website Design and Development service">
+        <div class="service-card-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect x="3" y="6" width="26" height="20" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <path d="M3 11H29" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="7" cy="8.5" r="1" fill="currentColor"/>
+            <circle cx="11" cy="8.5" r="1" fill="currentColor"/>
+            <circle cx="15" cy="8.5" r="1" fill="currentColor"/>
+            <path d="M10 18L14 22L22 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="service-card-tag">02</span>
+        <h3 class="service-card-title">Website Design &amp; Dev</h3>
+        <p class="service-card-desc">A website that makes people stay instead of bounce. Fast, beautiful, and built to convert visitors into clients.</p>
+        <ul class="service-card-list" aria-label="Website Design deliverables">
+          <li>Custom design (no templates)</li>
+          <li>Mobile-first, blazing fast</li>
+          <li>SEO-optimized from day one</li>
+          <li>CMS integration if needed</li>
+        </ul>
+        <a href="services.html#web-design" class="service-card-link" aria-label="Learn more about Website Design">Learn More →</a>
+      </article>
+
+      <!-- Service 3: Social Media -->
+      <article class="service-card service-card--featured" data-animate="fadeUp" aria-label="Social Media Management service">
+        <div class="service-card-featured-tag" aria-label="Most popular service">MOST POPULAR</div>
+        <div class="service-card-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M16 6C10.477 6 6 10.477 6 16s4.477 10 10 10 10-4.477 10-10S21.523 6 16 6z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <path d="M12 16l3 3 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="service-card-tag">03</span>
+        <h3 class="service-card-title">Social Media Management</h3>
+        <p class="service-card-desc">Viral or Bust. We don't do mediocre. Full management: strategy, content creation, scheduling, and community growth.</p>
+        <ul class="service-card-list" aria-label="Social Media deliverables">
+          <li>Monthly content calendar</li>
+          <li>Original content creation</li>
+          <li>Community management</li>
+          <li>Monthly analytics report</li>
+        </ul>
+        <a href="services.html#social-media" class="service-card-link" aria-label="Learn more about Social Media Management">Learn More →</a>
+      </article>
+
+      <!-- Service 4: Video Production -->
+      <article class="service-card" data-animate="fadeUp" aria-label="Video Production service">
+        <div class="service-card-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect x="3" y="8" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <path d="M21 12l8-4v16l-8-4V12z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+        <span class="service-card-tag">04</span>
+        <h3 class="service-card-title">Video Production</h3>
+        <p class="service-card-desc">Cinematic Ego — content that makes you look like a Fortune 500. Brand films, reels, ads, and everything in between.</p>
+        <ul class="service-card-list" aria-label="Video Production deliverables">
+          <li>Brand films &amp; commercials</li>
+          <li>Short-form social content</li>
+          <li>Product &amp; service showcases</li>
+          <li>Professional editing &amp; color</li>
+        </ul>
+        <a href="services.html#video" class="service-card-link" aria-label="Learn more about Video Production">Learn More →</a>
+      </article>
+
+      <!-- Service 5: Paid Ads -->
+      <article class="service-card" data-animate="fadeUp" aria-label="Paid Ads Management service">
+        <div class="service-card-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M4 24L12 14l6 6 4-5 6 9H4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
+            <circle cx="24" cy="8" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <path d="M22 8h4M24 6v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="service-card-tag">05</span>
+        <h3 class="service-card-title">Paid Ads Management</h3>
+        <p class="service-card-desc">We spend your money like it's ours. Carefully. Meta, Google, TikTok — full-funnel campaigns built to print ROI.</p>
+        <ul class="service-card-list" aria-label="Paid Ads deliverables">
+          <li>Campaign strategy &amp; setup</li>
+          <li>Ad creative production</li>
+          <li>A/B testing &amp; optimization</li>
+          <li>Weekly performance reports</li>
+        </ul>
+        <a href="services.html#paid-ads" class="service-card-link" aria-label="Learn more about Paid Ads">Learn More →</a>
+      </article>
+
+      <!-- Service 6: SEO -->
+      <article class="service-card" data-animate="fadeUp" aria-label="SEO and Content Strategy service">
+        <div class="service-card-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <circle cx="14" cy="14" r="9" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <path d="M21 21l7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M10 14h8M14 10v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="service-card-tag">06</span>
+        <h3 class="service-card-title">SEO &amp; Content Strategy</h3>
+        <p class="service-card-desc">Google doesn't know you exist. We fix that. Comprehensive SEO strategy and content that ranks, converts, and compounds over time.</p>
+        <ul class="service-card-list" aria-label="SEO deliverables">
+          <li>Full site SEO audit</li>
+          <li>Keyword &amp; competitor research</li>
+          <li>On-page &amp; technical SEO</li>
+          <li>Content strategy &amp; execution</li>
+        </ul>
+        <a href="services.html#seo" class="service-card-link" aria-label="Learn more about SEO">Learn More →</a>
+      </article>
+
+    </div><!-- /services-grid -->
+
+    <div class="services-footer" data-animate="fadeUp">
+      <a href="services.html" class="btn btn-outline btn-lg">See the Full Arsenal →</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     PORTFOLIO PREVIEW
+============================================================ -->
+<section class="portfolio-section section-pad" aria-labelledby="portfolio-headline">
+  <div class="container">
+
+    <div class="section-header" data-animate="fadeUp">
+      <span class="section-tag">// THE PROOF</span>
+      <h2 class="section-headline" id="portfolio-headline">HALL OF FAME</h2>
+      <p class="section-sub">Some of our greatest hits. The brands we turned into weapons.</p>
+    </div>
+
+    <div class="portfolio-grid" data-stagger>
+
+      <!-- Portfolio Item 1 -->
+      <article class="portfolio-card portfolio-card--large" data-animate="fadeUp" aria-label="Apex Collective brand identity portfolio item">
+        <div class="portfolio-card-img" role="img" aria-label="Apex Collective brand identity project — bold geometric logo on dark background" style="background: linear-gradient(135deg, #0a2a18 0%, #0f3d22 50%, #1a5c30 100%);">
+          <div class="portfolio-card-placeholder" aria-hidden="true">
+            <span>APEX<br>COLLECTIVE</span>
+          </div>
+        </div>
+        <div class="portfolio-card-overlay">
+          <span class="portfolio-card-category">Branding</span>
+          <h3 class="portfolio-card-title">Apex Collective</h3>
+          <p class="portfolio-card-result">↑ 280% brand recognition within 60 days</p>
+          <a href="portfolio.html" class="portfolio-card-cta" aria-label="View Apex Collective project">View Project →</a>
+        </div>
+      </article>
+
+      <!-- Portfolio Item 2 -->
+      <article class="portfolio-card" data-animate="fadeUp" data-animate-delay="80" aria-label="Lux Realty web design portfolio item">
+        <div class="portfolio-card-img" role="img" aria-label="Lux Realty website design — luxury real estate web project" style="background: linear-gradient(135deg, #0f1a0c 0%, #162b14 50%, #1e3d1c 100%);">
+          <div class="portfolio-card-placeholder" aria-hidden="true">
+            <span>LUX<br>REALTY</span>
+          </div>
+        </div>
+        <div class="portfolio-card-overlay">
+          <span class="portfolio-card-category">Web Design</span>
+          <h3 class="portfolio-card-title">Lux Realty</h3>
+          <p class="portfolio-card-result">↓ 62% bounce rate after redesign</p>
+          <a href="portfolio.html" class="portfolio-card-cta" aria-label="View Lux Realty project">View Project →</a>
+        </div>
+      </article>
+
+      <!-- Portfolio Item 3 -->
+      <article class="portfolio-card" data-animate="fadeUp" data-animate-delay="160" aria-label="Nova Fitness social media portfolio item">
+        <div class="portfolio-card-img" role="img" aria-label="Nova Fitness social media — content strategy and growth campaign" style="background: linear-gradient(135deg, #061510 0%, #0c2618 50%, #133320 100%);">
+          <div class="portfolio-card-placeholder" aria-hidden="true">
+            <span>NOVA<br>FITNESS</span>
+          </div>
+        </div>
+        <div class="portfolio-card-overlay">
+          <span class="portfolio-card-category">Social Media</span>
+          <h3 class="portfolio-card-title">Nova Fitness</h3>
+          <p class="portfolio-card-result">↑ 347% engagement in 90 days</p>
+          <a href="portfolio.html" class="portfolio-card-cta" aria-label="View Nova Fitness project">View Project →</a>
+        </div>
+      </article>
+
+      <!-- Portfolio Item 4 -->
+      <article class="portfolio-card portfolio-card--wide" data-animate="fadeUp" data-animate-delay="240" aria-label="Meridian Coffee video production portfolio item">
+        <div class="portfolio-card-img" role="img" aria-label="Meridian Coffee brand film — cinematic video production project" style="background: linear-gradient(135deg, #0a1a0d 0%, #112515 50%, #183520 100%);">
+          <div class="portfolio-card-placeholder" aria-hidden="true">
+            <span>MERIDIAN<br>COFFEE</span>
+          </div>
+        </div>
+        <div class="portfolio-card-overlay">
+          <span class="portfolio-card-category">Video Production</span>
+          <h3 class="portfolio-card-title">Meridian Coffee</h3>
+          <p class="portfolio-card-result">Brand film generated $180K in attributed revenue</p>
+          <a href="portfolio.html" class="portfolio-card-cta" aria-label="View Meridian Coffee project">View Project →</a>
+        </div>
+      </article>
+
+    </div><!-- /portfolio-grid -->
+
+    <div class="portfolio-footer" data-animate="fadeUp">
+      <a href="portfolio.html" class="btn btn-primary btn-lg">See All Work →</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     HOW IT WORKS — 3-STEP PROCESS
+============================================================ -->
+<section class="process-section section-pad" aria-labelledby="process-headline">
+  <div class="container">
+
+    <div class="section-header" data-animate="fadeUp">
+      <span class="section-tag">// THE PLAYBOOK</span>
+      <h2 class="section-headline" id="process-headline">HOW WE WIN</h2>
+      <p class="section-sub">Simple. Three steps. Transformative results.</p>
+    </div>
+
+    <div class="process-steps" data-stagger>
+
+      <div class="process-step" data-animate="fadeUp">
+        <div class="process-step-number" aria-hidden="true">01</div>
+        <div class="process-step-content">
+          <h3 class="process-step-title">Apply &amp; Qualify</h3>
+          <p class="process-step-desc">Submit your free consultation. We review your brand, your goals, and whether we're the right fit. Spoiler: we probably are.</p>
+        </div>
+        <div class="process-step-arrow" aria-hidden="true">→</div>
+      </div>
+
+      <div class="process-step" data-animate="fadeUp" data-animate-delay="160">
+        <div class="process-step-number" aria-hidden="true">02</div>
+        <div class="process-step-content">
+          <h3 class="process-step-title">Strategy Session</h3>
+          <p class="process-step-desc">We go deep. Full audit of your brand, competitors, and opportunities. Then we build a custom roadmap — no cookie-cutter packages.</p>
+        </div>
+        <div class="process-step-arrow" aria-hidden="true">→</div>
+      </div>
+
+      <div class="process-step" data-animate="fadeUp" data-animate-delay="320">
+        <div class="process-step-number" aria-hidden="true">03</div>
+        <div class="process-step-content">
+          <h3 class="process-step-title">Execution &amp; Domination</h3>
+          <p class="process-step-desc">We build, launch, and scale. You watch your brand transform from invisible to unavoidable. Then we send you the receipts.</p>
+        </div>
+        <div class="process-step-arrow process-step-arrow--hidden" aria-hidden="true">→</div>
+      </div>
+
+    </div><!-- /process-steps -->
+
+    <div class="process-cta" data-animate="fadeUp">
+      <a href="contact.html" class="btn btn-primary btn-lg">Start the Process →</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     TESTIMONIALS — "WHAT THE PEASANTS SAY"
+============================================================ -->
+<section class="testimonials-section section-pad" aria-labelledby="testimonials-headline">
+  <div class="container">
+
+    <div class="section-header" data-animate="fadeUp">
+      <span class="section-tag">// THE RECEIPTS</span>
+      <h2 class="section-headline" id="testimonials-headline">WHAT THE<br><em>PEASANTS SAY</em></h2>
+      <p class="section-sub">Our clients said that. We just put it in a section.</p>
+    </div>
+
+    <div class="testimonials-grid" data-stagger>
+
+      <article class="testimonial-card" data-animate="fadeUp" aria-label="Testimonial from Marcus T, founder">
+        <div class="testimonial-rating" aria-label="5 out of 5 stars">
+          <span aria-hidden="true">★★★★★</span>
+        </div>
+        <blockquote class="testimonial-quote">
+          "I came in with a logo made in PowerPoint. I left with a brand that makes people think I raised a Series A. These brothers don't miss."
+        </blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" role="img" aria-label="Marcus T profile photo placeholder" style="background: linear-gradient(135deg, #00c853 0%, #00a844 100%);">
+            <span aria-hidden="true">MT</span>
+          </div>
+          <div>
+            <strong class="testimonial-name">Marcus T.</strong>
+            <span class="testimonial-title">Founder, Apex Collective</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card testimonial-card--highlight" data-animate="fadeUp" data-animate-delay="80" aria-label="Testimonial from Jess Rivera, CEO">
+        <div class="testimonial-rating" aria-label="5 out of 5 stars">
+          <span aria-hidden="true">★★★★★</span>
+        </div>
+        <blockquote class="testimonial-quote">
+          "Our bounce rate went from 78% to 16% after the new site went live. That's not a redesign, that's a resurrection. And they delivered in 3 weeks."
+        </blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" role="img" aria-label="Jess Rivera profile photo placeholder" style="background: linear-gradient(135deg, #ffd700 0%, #e6c000 100%);">
+            <span aria-hidden="true" style="color:#000">JR</span>
+          </div>
+          <div>
+            <strong class="testimonial-name">Jess Rivera</strong>
+            <span class="testimonial-title">CEO, Lux Realty Group</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card" data-animate="fadeUp" data-animate-delay="160" aria-label="Testimonial from Damien Cole, co-founder">
+        <div class="testimonial-rating" aria-label="5 out of 5 stars">
+          <span aria-hidden="true">★★★★★</span>
+        </div>
+        <blockquote class="testimonial-quote">
+          "Hired them for social. Two months later we had 40K new followers and a waitlist for our gym. I didn't even know a waitlist was possible for a gym."
+        </blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" role="img" aria-label="Damien Cole profile photo placeholder" style="background: linear-gradient(135deg, #00c853 0%, #007a33 100%);">
+            <span aria-hidden="true">DC</span>
+          </div>
+          <div>
+            <strong class="testimonial-name">Damien Cole</strong>
+            <span class="testimonial-title">Co-Founder, Nova Fitness</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card" data-animate="fadeUp" data-animate-delay="240" aria-label="Testimonial from Priya M, creative director">
+        <div class="testimonial-rating" aria-label="5 out of 5 stars">
+          <span aria-hidden="true">★★★★★</span>
+        </div>
+        <blockquote class="testimonial-quote">
+          "The brand film they made for Meridian was so good, our baristas started crying at the premiere. Clients now come in asking for 'the coffee they saw in the movie.'"
+        </blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" role="img" aria-label="Priya M profile photo placeholder" style="background: linear-gradient(135deg, #00c853 0%, #00a844 100%);">
+            <span aria-hidden="true">PM</span>
+          </div>
+          <div>
+            <strong class="testimonial-name">Priya M.</strong>
+            <span class="testimonial-title">Creative Director, Meridian Coffee</span>
+          </div>
+        </div>
+      </article>
+
+    </div><!-- /testimonials-grid -->
+
+    <div class="testimonials-footer" data-animate="fadeUp">
+      <a href="results.html" class="btn btn-ghost">Read All Case Studies →</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FULL-WIDTH CTA SECTION
+============================================================ -->
+<section class="cta-banner" aria-labelledby="cta-headline">
+  <div class="cta-banner-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="cta-banner-inner" data-animate="fadeUp">
+
+      <span class="section-tag cta-tag">// YOUR MOVE</span>
+      <h2 class="cta-headline" id="cta-headline">
+        READY TO STOP<br>BEING INVISIBLE?
+      </h2>
+      <p class="cta-sub">
+        Free consultation. No pressure. Just two bros who will<br>
+        tell you exactly what your brand needs — and then deliver it.
+      </p>
+
+      <div class="cta-banner-actions">
+        <a href="contact.html" class="btn btn-primary btn-xl">Apply For Greatness →</a>
+        <a href="services.html" class="btn btn-ghost btn-xl" style="color:var(--color-white)">See What We Do</a>
+      </div>
+
+      <p class="cta-reassurance">
+        <span class="cta-check" aria-hidden="true">✓</span> Free consultation &nbsp;·&nbsp;
+        <span class="cta-check" aria-hidden="true">✓</span> Response within 24hrs &nbsp;·&nbsp;
+        <span class="cta-check" aria-hidden="true">✓</span> No boring brands. Ever.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+
+    <div class="footer-top">
+
+      <!-- Brand Column -->
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo" aria-label="2Bros Media homepage">
+          <div class="nav-logo-mark" aria-hidden="true">2B</div>
+          <span class="nav-logo-text">2BROS <span>MEDIA</span></span>
+        </a>
+        <p class="footer-tagline">Your brand, but actually good.</p>
+        <div class="footer-socials" aria-label="Social media links">
+          <a href="https://instagram.com/2brosmedia" class="footer-social" target="_blank" rel="noopener noreferrer" aria-label="2Bros Media on Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="https://linkedin.com/company/2brosmedia" class="footer-social" target="_blank" rel="noopener noreferrer" aria-label="2Bros Media on LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M7 10v7M7 7v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M11 17v-4c0-1.5 1-2 2-2s2 .5 2 2v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M11 10v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <a href="https://tiktok.com/@2brosmedia" class="footer-social" target="_blank" rel="noopener noreferrer" aria-label="2Bros Media on TikTok">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="https://twitter.com/2brosmedia" class="footer-social" target="_blank" rel="noopener noreferrer" aria-label="2Bros Media on X/Twitter">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 4l16 16M4 20L20 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Nav Columns -->
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav-col">
+          <h4 class="footer-nav-heading">Pages</h4>
+          <ul role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-col">
+          <h4 class="footer-nav-heading">Services</h4>
+          <ul role="list">
+            <li><a href="services.html#brand-identity">Brand Identity</a></li>
+            <li><a href="services.html#web-design">Web Design</a></li>
+            <li><a href="services.html#social-media">Social Media</a></li>
+            <li><a href="services.html#video">Video Production</a></li>
+            <li><a href="services.html#paid-ads">Paid Ads</a></li>
+            <li><a href="services.html#seo">SEO &amp; Content</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- CTA Column -->
+      <div class="footer-cta-col">
+        <h4 class="footer-nav-heading">Get Started</h4>
+        <p class="footer-cta-text">Stop suffering. Free consultation. We'll show you exactly what your brand is missing.</p>
+        <a href="contact.html" class="btn btn-primary" style="margin-top:16px">Apply For Greatness →</a>
+      </div>
+
+    </div><!-- /footer-top -->
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 2Bros Media. All rights reserved. <span class="footer-built">Built different.</span></p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <span aria-hidden="true">·</span>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- ============================================================
+     JAVASCRIPT
+============================================================ -->
+<script defer src="assets/js/main.js"></script>
+<script defer src="assets/js/animations.js"></script>
+
+<!-- Inline critical JS for nav (no layout shift) -->
+<script>
+  // ---- STICKY NAV ----
+  (function() {
+    const nav = document.getElementById('main-nav');
+    const navCta = document.getElementById('nav-cta-desktop');
+    let ticking = false;
+
+    function onScroll() {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          if (window.scrollY > 50) {
+            nav.classList.add('scrolled');
+            if (navCta) navCta.style.display = 'inline-flex';
+          } else {
+            nav.classList.remove('scrolled');
+            if (navCta) navCta.style.display = 'none';
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  })();
+
+  // ---- MOBILE MENU ----
+  (function() {
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeBtn   = document.getElementById('mobile-close');
+
+    function openMenu() {
+      mobileMenu.classList.add('open');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+      mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    if (hamburger) hamburger.addEventListener('click', openMenu);
+    if (closeBtn)  closeBtn.addEventListener('click', closeMenu);
+    if (mobileMenu) {
+      mobileMenu.addEventListener('click', (e) => {
+        if (e.target === mobileMenu) closeMenu();
+      });
+    }
+
+    // Keyboard: Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileMenu.classList.contains('open')) closeMenu();
+    });
+  })();
+
+  // ---- ACTIVE NAV LINK ----
+  (function() {
+    const current = window.location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      const href = a.getAttribute('href');
+      if (href === current || (current === '' && href === 'index.html')) {
+        a.classList.add('active');
+      }
+    });
+  })();
+
+  // ---- INTERSECTION OBSERVER ANIMATIONS ----
+  (function() {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const delay = el.dataset.animateDelay ? parseInt(el.dataset.animateDelay) : 0;
+          setTimeout(() => {
+            el.classList.add('in-view');
+          }, delay);
+          observer.unobserve(el);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('[data-animate]').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Stagger children
+    document.querySelectorAll('[data-stagger]').forEach(parent => {
+      const children = parent.querySelectorAll('[data-animate]');
+      children.forEach((child, i) => {
+        if (!child.dataset.animateDelay) {
+          child.dataset.animateDelay = i * 80;
+        }
+      });
+    });
+  })();
+
+  // ---- COUNTER ANIMATION ----
+  (function() {
+    const counters = document.querySelectorAll('[data-counter]');
+    const seen = new Set();
+
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !seen.has(entry.target)) {
+          seen.add(entry.target);
+          const el = entry.target;
+          const target = parseFloat(el.dataset.counter);
+          const isFloat = target % 1 !== 0;
+          const duration = 1400;
+          const start = performance.now();
+
+          function step(now) {
+            const progress = Math.min((now - start) / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3);
+            const value = eased * target;
+            el.textContent = isFloat ? value.toFixed(1) : Math.floor(value);
+            if (progress < 1) requestAnimationFrame(step);
+            else el.textContent = isFloat ? target.toFixed(1) : target;
+          }
+          requestAnimationFrame(step);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    counters.forEach(c => counterObserver.observe(c));
+  })();
+</script>
+
+</body>
+</html>
