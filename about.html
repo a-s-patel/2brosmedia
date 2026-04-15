@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+       PRIMARY META TAGS
+  ============================================================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | 2Bros Media — The Bros Behind the Brilliance</title>
+  <meta name="description" content="Two guys who got tired of watching bad brands win. Meet the team behind 2Bros Media — a creative agency built on obsessive craft, zero corporate BS, and results that actually move the needle.">
+  <meta name="keywords" content="2Bros Media about, creative agency team, branding agency founders, media agency story, who is 2Bros Media">
+  <meta name="author" content="2Bros Media">
+  <link rel="canonical" href="https://2bros.click/about.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://2bros.click/about.html">
+  <meta property="og:title" content="About Us | 2Bros Media — The Bros Behind the Brilliance">
+  <meta property="og:description" content="Two guys who got tired of watching bad brands win. Meet the team at 2Bros Media.">
+  <meta property="og:image" content="https://2bros.click/assets/images/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@2brosmedia">
+  <meta name="twitter:title" content="About Us | 2Bros Media — The Bros Behind the Brilliance">
+  <meta name="twitter:description" content="Two guys who got tired of watching bad brands win. Meet the team at 2Bros Media.">
+  <meta name="twitter:image" content="https://2bros.click/assets/images/og-image.jpg">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About 2Bros Media",
+    "description": "Learn about the team and philosophy behind 2Bros Media, a creative agency specializing in branding, web design, and social media.",
+    "url": "https://2bros.click/about.html",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "2Bros Media",
+      "url": "https://2bros.click",
+      "logo": "https://2bros.click/assets/images/logo.svg"
+    }
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- ============================================================
+       CRITICAL ABOVE-THE-FOLD CSS
+  ============================================================ -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--color-bg);
+      color: var(--color-white);
+      font-family: var(--font-body);
+      font-size: 17px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    button { cursor: pointer; border: none; background: none; font: inherit; }
+
+    :root {
+      --color-bg:          #050f0a;
+      --color-surface:     #0a1f13;
+      --color-surface-2:   #0f2b1a;
+      --color-emerald:     #00c853;
+      --color-emerald-dim: #00a844;
+      --color-gold:        #ffd700;
+      --color-white:       #f0f8f2;
+      --color-muted:       #7a9b82;
+      --color-border:      #1a3524;
+      --color-danger:      #ff3b30;
+      --font-display: 'Bebas Neue', 'Impact', sans-serif;
+      --font-body:    'DM Sans', 'Helvetica Neue', sans-serif;
+      --font-mono:    'JetBrains Mono', monospace;
+      --nav-h:        72px;
+      --section-pad:  clamp(80px, 10vw, 140px);
+      --container:    1200px;
+      --gutter:       clamp(20px, 5vw, 60px);
+      --radius:       4px;
+      --radius-lg:    12px;
+    }
+
+    /* NAV — critical */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      height: var(--nav-h);
+      display: flex;
+      align-items: center;
+      padding: 0 var(--gutter);
+      transition: background 0.3s ease, backdrop-filter 0.3s ease, border-bottom 0.3s ease;
+    }
+    .nav.scrolled {
+      background: rgba(5, 15, 10, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .nav-inner {
+      width: 100%;
+      max-width: var(--container);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .nav-logo-mark {
+      width: 36px;
+      height: 36px;
+      background: var(--color-emerald);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 18px;
+      color: var(--color-bg);
+      letter-spacing: -1px;
+    }
+    .nav-logo-text {
+      font-family: var(--font-display);
+      font-size: 22px;
+      letter-spacing: 0.05em;
+      color: var(--color-white);
+    }
+    .nav-logo-text span { color: var(--color-emerald); }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+    }
+    .nav-links a {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+      transition: color 0.2s;
+    }
+    .nav-links a:hover,
+    .nav-links a.active { color: var(--color-white); }
+    .nav-cta { display: flex; align-items: center; gap: 16px; }
+
+    /* PAGE HERO */
+    .page-hero {
+      position: relative;
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding-top: var(--nav-h);
+    }
+    .page-hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 55% 70% at 75% 40%, rgba(0,200,83,0.10) 0%, transparent 65%),
+        radial-gradient(ellipse 35% 40% at 5% 90%, rgba(0,200,83,0.05) 0%, transparent 55%),
+        var(--color-bg);
+    }
+    .page-hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,200,83,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,200,83,0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+  </style>
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/about.css">
+</head>
+
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+============================================================ -->
+<nav class="nav" id="main-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="2Bros Media — Home">
+      <div class="nav-logo-mark" aria-hidden="true">2B</div>
+      <span class="nav-logo-text">2BROS <span>MEDIA</span></span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="about.html" class="active" aria-current="page">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="results.html">Results</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary" id="nav-cta-desktop" style="display:none">Apply For Greatness →</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <button class="mobile-menu-close" id="mobile-close" aria-label="Close menu">✕</button>
+  <nav>
+    <ul class="mobile-menu-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="results.html">Results</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <a href="contact.html" class="btn btn-primary mobile-menu-cta">Apply For Greatness →</a>
+  </nav>
+</div>
+
+
+<!-- ============================================================
+     PAGE HERO — SPLIT LAYOUT
+============================================================ -->
+<section class="page-hero" id="hero" aria-labelledby="about-hero-headline">
+  <div class="page-hero-bg" aria-hidden="true"></div>
+  <div class="page-hero-grid" aria-hidden="true"></div>
+
+  <div class="container about-hero-layout">
+
+    <!-- Left: Text -->
+    <div class="about-hero-text">
+      <span class="section-tag" data-animate="fadeUp">// ABOUT 2BROS MEDIA</span>
+
+      <h1 class="about-hero-headline" id="about-hero-headline" data-animate="fadeUp" data-animate-delay="80">
+        THE BROS<br>
+        BEHIND<br>
+        <em class="about-hero-em">THE BRILLIANCE</em>
+      </h1>
+
+      <p class="about-hero-sub" data-animate="fadeUp" data-animate-delay="180">
+        Two guys who got tired of watching bad brands win.<br>
+        So we did something about it.
+      </p>
+
+      <div class="about-hero-actions" data-animate="fadeUp" data-animate-delay="280">
+        <a href="contact.html" class="btn btn-primary btn-lg">Work With Us →</a>
+        <a href="#our-story" class="btn btn-ghost btn-lg">Our Story ↓</a>
+      </div>
+
+      <!-- Quick credentials -->
+      <div class="about-hero-creds" data-animate="fadeUp" data-animate-delay="360">
+        <div class="about-cred">
+          <span class="about-cred-num" data-counter="47">0</span>
+          <span class="about-cred-label">Brands Transformed</span>
+        </div>
+        <div class="about-cred-divider" aria-hidden="true"></div>
+        <div class="about-cred">
+          <span class="about-cred-num"><span data-counter="5">0</span>+</span>
+          <span class="about-cred-label">Years Dominating</span>
+        </div>
+        <div class="about-cred-divider" aria-hidden="true"></div>
+        <div class="about-cred">
+          <span class="about-cred-num"><span data-counter="12">0</span></span>
+          <span class="about-cred-label">Industries Owned</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Visual block -->
+    <div class="about-hero-visual" data-animate="fadeUp" data-animate-delay="160" aria-hidden="true">
+      <div class="about-hero-img-frame">
+        <div class="about-hero-img-placeholder" role="img" aria-label="The 2Bros Media team photo placeholder">
+          <div class="about-hero-img-inner">
+            <span class="about-hero-img-label">2B</span>
+            <span class="about-hero-img-sub">EST. 2019</span>
+          </div>
+        </div>
+        <!-- Floating tags -->
+        <div class="about-float-tag about-float-tag--1">
+          <span class="about-float-icon" aria-hidden="true">✦</span>
+          <span>Zero Boring Brands</span>
+        </div>
+        <div class="about-float-tag about-float-tag--2">
+          <span class="about-float-icon" aria-hidden="true">↑</span>
+          <span>$2.3M Generated</span>
+        </div>
+        <div class="about-float-tag about-float-tag--3">
+          <span class="about-float-icon" aria-hidden="true">★</span>
+          <span>100% Delivered</span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /about-hero-layout -->
+</section>
+
+
+<!-- ============================================================
+     ORIGIN STORY
+============================================================ -->
+<section class="origin-section section-pad" id="our-story" aria-labelledby="origin-headline">
+  <div class="container">
+
+    <div class="origin-layout">
+
+      <!-- Chapter marker -->
+      <div class="origin-marker" data-animate="fadeUp" aria-hidden="true">
+        <span class="origin-marker-line"></span>
+        <span class="origin-marker-label">CHAPTER 01</span>
+        <span class="origin-marker-line"></span>
+      </div>
+
+      <div class="origin-content">
+        <span class="section-tag" data-animate="fadeUp">// THE ORIGIN STORY</span>
+        <h2 class="origin-headline" id="origin-headline" data-animate="fadeUp" data-animate-delay="80">
+          TWO GUYS.<br>ONE MISSION.<br>
+          <span class="origin-headline-accent">ZERO TOLERANCE<br>FOR MEDIOCRITY.</span>
+        </h2>
+      </div>
+
+      <div class="origin-body" data-animate="fadeUp" data-animate-delay="120">
+        <p class="origin-p origin-p--lead">
+          We didn't start 2Bros Media because we needed a job. We started it because we were sick — genuinely, deeply sick — of watching brilliant businesses get buried by garbage branding while talentless agencies cashed the checks and shrugged.
+        </p>
+        <p class="origin-p">
+          Between us, we'd worked at agencies, in-house teams, and solo gigs for over a decade. We'd seen the inside of the machine. The bloated timelines. The recycled templates. The account manager who'd never held a camera telling a filmmaker what "creative" means. We built 2Bros to be the agency we always wished existed — one that actually gives a damn, moves fast, and delivers work that makes you look like you spent ten times what you did.
+        </p>
+        <p class="origin-p">
+          Since day one, we've operated on a simple rule: <strong>every brand we touch has to be better than it was when we found it.</strong> No exceptions. No excuses. Just results.
+        </p>
+        <a href="results.html" class="btn btn-outline" style="margin-top: 8px;">See the Results →</a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     PHILOSOPHY — CORE BELIEFS
+============================================================ -->
+<section class="philosophy-section section-pad" aria-labelledby="philosophy-headline">
+  <div class="container">
+
+    <div class="section-header" data-animate="fadeUp">
+      <span class="section-tag">// HOW WE THINK</span>
+      <h2 class="section-headline" id="philosophy-headline">OUR PHILOSOPHY</h2>
+      <p class="section-sub">Four things we believe so hard we built a company around them.</p>
+    </div>
+
+    <div class="philosophy-grid" data-stagger>
+
+      <div class="philosophy-card" data-animate="fadeUp">
+        <div class="philosophy-card-num" aria-hidden="true">01</div>
+        <div class="philosophy-card-icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <path d="M18 4L32 11V25L18 32L4 25V11L18 4Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <path d="M18 4V32M4 11L32 25M32 11L4 25" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+            <circle cx="18" cy="18" r="4" fill="currentColor"/>
+          </svg>
+        </div>
+        <h3 class="philosophy-card-title">Craft Over Speed</h3>
+        <p class="philosophy-card-desc">We move fast — but never at the expense of quality. Every pixel, every word, every frame is intentional. We don't ship work we'd be embarrassed to put our name on. Period.</p>
+      </div>
+
+      <div class="philosophy-card philosophy-card--featured" data-animate="fadeUp">
+        <div class="philosophy-card-num" aria-hidden="true">02</div>
+        <div class="philosophy-card-icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <path d="M6 28L14 16l7 8 5-6 9 10H6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
+            <path d="M6 28L14 16l7 8 5-6 9 10" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" opacity="0.3" fill="none"/>
+            <circle cx="27" cy="9" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          </svg>
+        </div>
+        <h3 class="philosophy-card-title">Results Are the Only Opinion That Matters</h3>
+        <p class="philosophy-card-desc">We don't care if you think the logo looks nice. We care if it makes people trust you. We don't care if the ad is pretty. We care if it prints money. Everything we do is measured.</p>
+      </div>
+
+      <div class="philosophy-card" data-animate="fadeUp">
+        <div class="philosophy-card-num" aria-hidden="true">03</div>
+        <div class="philosophy-card-icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <rect x="4" y="12" width="28" height="20" rx="3" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <path d="M12 12V9a6 6 0 0 1 12 0v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="18" cy="22" r="3" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <path d="M18 25v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="philosophy-card-title">Honesty Over Comfort</h3>
+        <p class="philosophy-card-desc">We'll tell you when your idea is bad. We'll tell you when your budget is unrealistic. We'll tell you the truth — because agencies that only say yes are agencies that take your money and waste it.</p>
+      </div>
+
+      <div class="philosophy-card" data-animate="fadeUp">
+        <div class="philosophy-card-num" aria-hidden="true">04</div>
+        <div class="philosophy-card-icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <path d="M18 4c-7.7 0-14 6.3-14 14s6.3 14 14 14 14-6.3 14-14S25.7 4 18 4z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <path d="M18 4C14 10 11 14 11 18s3 8 7 10M18 4c4 6 7 10 7 14s-3 8-7 10" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+            <path d="M4 18h28" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+            <path d="M12 24l4-4 3 3 5-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="philosophy-card-title">Long-Game Thinking</h3>
+        <p class="philosophy-card-desc">One viral post isn't a brand. One good website doesn't guarantee growth. We build systems — not stunts. Every deliverable is designed to compound over time and make you harder to beat.</p>
+      </div>
+
+    </div><!-- /philosophy-grid -->
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     MEET THE TEAM
+============================================================ -->
+<section class="team-section section-pad" aria-labelledby="team-headline">
+  <div class="container">
+
+    <div class="section-header" data-animate="fadeUp">
+      <span class="section-tag">// THE PEOPLE</span>
+      <h2 class="section-headline" id="team-headline">MEET THE BROS</h2>
+      <p class="section-sub">Two operators. One obsession. Infinite flex.</p>
+    </div>
+
+    <div class="team-grid" data-stagger>
+
+      <!-- Team Member 1 -->
+      <article class="team-card" data-animate="fadeUp" aria-label="Team member: The Don">
+        <div class="team-card-img-wrap">
+          <div class="team-card-img"
+               role="img"
+               aria-label="The Don — Co-Founder and CEO of 2Bros Media profile photo placeholder"
+               style="background: linear-gradient(160deg, #0a2a18 0%, #112e1c 60%, #0a1a10 100%);">
+            <span class="team-card-initials" aria-hidden="true">TD</span>
+          </div>
+          <div class="team-card-badge" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M8 2l1.5 3.5L13 6.5l-2.5 2.5.6 3.5L8 11l-3.1 1.5.6-3.5L3 6.5l3.5-1L8 2z" fill="currentColor"/>
+            </svg>
+          </div>
+        </div>
+        <div class="team-card-body">
+          <div class="team-card-header">
+            <h3 class="team-card-name">The Don</h3>
+            <span class="team-card-title-badge">Chief Clout Officer</span>
+          </div>
+          <p class="team-card-role">Co-Founder &amp; CEO</p>
+          <p class="team-card-bio">The strategist. The closer. The one who walks into a room and makes every brand problem feel solvable in 10 minutes. 8+ years building brands that dominate their categories — from local businesses to venture-backed startups.</p>
+          <div class="team-card-skills">
+            <span class="team-skill-tag">Brand Strategy</span>
+            <span class="team-skill-tag">Creative Direction</span>
+            <span class="team-skill-tag">Paid Ads</span>
+            <span class="team-skill-tag">Growth</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Team Member 2 -->
+      <article class="team-card" data-animate="fadeUp" data-animate-delay="120" aria-label="Team member: The Closer">
+        <div class="team-card-img-wrap">
+          <div class="team-card-img"
+               role="img"
+               aria-label="The Closer — Co-Founder and CMO of 2Bros Media profile photo placeholder"
+               style="background: linear-gradient(160deg, #071510 0%, #0d2418 60%, #0a1a10 100%);">
+            <span class="team-card-initials" aria-hidden="true">TC</span>
+          </div>
+          <div class="team-card-badge" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M8 2l1.5 3.5L13 6.5l-2.5 2.5.6 3.5L8 11l-3.1 1.5.6-3.5L3 6.5l3.5-1L8 2z" fill="currentColor"/>
+            </svg>
+          </div>
+        </div>
+        <div class="team-card-body">
+          <div class="team-card-header">
+            <h3 class="team-card-name">The Closer</h3>
+            <span class="team-card-title-badge team-card-title-badge--gold">Chief Hype Officer</span>
+          </div>
+          <p class="team-card-role">Co-Founder &amp; CMO</p>
+          <p class="team-card-bio">The creative. The one who makes things look so good you feel slightly inadequate. 7+ years in design, video production, and social content — with a track record of campaigns that don't just perform, they become cultural moments.</p>
+          <div class="team-card-skills">
+            <span class="team-skill-tag">Design Systems</span>
+            <span class="team-skill-tag">Video Production</span>
+            <span class="team-skill-tag">Social Media</span>
+            <span class="team-skill-tag">Content</span>
+          </div>
+        </div>
+      </article>
+
+    </div><!-- /team-grid -->
+
+    <!-- Extended team note -->
+    <div class="team-extended" data-animate="fadeUp">
+      <div class="team-extended-inner">
+        <div class="team-extended-icon" aria-hidden="true">+</div>
+        <div>
+          <h3 class="team-extended-title">Plus Our Roster of Elite Collaborators</h3>
+          <p class="team-extended-desc">Photographers, developers, copywriters, media buyers, and motion designers — all vetted, all elite, all on-call. We don't hire generalists. We activate specialists.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     HOW WE WORK — PROCESS
+============================================================ -->
+<section class="process-detail-section section-pad" aria-labelledby="process-detail-headline">
+  <div class="container">
+
+    <div class="section-header" data-animate="fadeUp">
+      <span class="section-tag">// THE SYSTEM</span>
+      <h2 class="section-headline" id="process-detail-headline">HOW WE WORK</h2>
+      <p class="section-sub">Every project runs through the same battle-tested machine.</p>
+    </div>
+
+    <div class="process-detail-track">
+
+      <!-- Step 1 -->
+      <div class="process-detail-step" data-animate="fadeUp">
+        <div class="process-detail-left">
+          <div class="process-detail-num" aria-hidden="true">01</div>
+          <div class="process-detail-connector" aria-hidden="true"></div>
+        </div>
+        <div class="process-detail-content">
+          <span class="process-detail-phase" aria-label="Phase 1">DISCOVERY</span>
+          <h3 class="process-detail-title">We Dig Into Everything</h3>
+          <p class="process-detail-desc">Before we touch anything creative, we audit your current brand, study your competitors, research your audience, and identify every gap and opportunity in your market. No guessing. No assumptions. Just data and sharp eyes.</p>
+          <div class="process-detail-deliverables">
+            <span class="process-detail-tag">Brand audit</span>
+            <span class="process-detail-tag">Competitor analysis</span>
+            <span class="process-detail-tag">Audience research</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="process-detail-step" data-animate="fadeUp" data-animate-delay="80">
+        <div class="process-detail-left">
+          <div class="process-detail-num" aria-hidden="true">02</div>
+          <div class="process-detail-connector" aria-hidden="true"></div>
+        </div>
+        <div class="process-detail-content">
+          <span class="process-detail-phase" aria-label="Phase 2">STRATEGY</span>
+          <h3 class="process-detail-title">We Build the Roadmap</h3>
+          <p class="process-detail-desc">Custom strategy. Not a template. Not a retainer proposal copy-pasted from the last client. A real, specific plan built for your brand — with defined goals, timelines, deliverables, and KPIs we'll both be held to.</p>
+          <div class="process-detail-deliverables">
+            <span class="process-detail-tag">Strategy document</span>
+            <span class="process-detail-tag">Project timeline</span>
+            <span class="process-detail-tag">KPI framework</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="process-detail-step" data-animate="fadeUp" data-animate-delay="160">
+        <div class="process-detail-left">
+          <div class="process-detail-num" aria-hidden="true">03</div>
+          <div class="process-detail-connector" aria-hidden="true"></div>
+        </div>
+        <div class="process-detail-content">
+          <span class="process-detail-phase" aria-label="Phase 3">EXECUTION</span>
+          <h3 class="process-detail-title">We Build the Thing</h3>
+          <p class="process-detail-desc">This is where the magic actually happens. Design, development, production, copywriting — done at the highest level we're capable of, which is very high. Revisions are included. Surprises are not.</p>
+          <div class="process-detail-deliverables">
+            <span class="process-detail-tag">Design &amp; production</span>
+            <span class="process-detail-tag">Revision rounds</span>
+            <span class="process-detail-tag">Quality review</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="process-detail-step" data-animate="fadeUp" data-animate-delay="240">
+        <div class="process-detail-left">
+          <div class="process-detail-num" aria-hidden="true">04</div>
+          <div class="process-detail-connector" aria-hidden="true"></div>
+        </div>
+        <div class="process-detail-content">
+          <span class="process-detail-phase" aria-label="Phase 4">LAUNCH</span>
+          <h3 class="process-detail-title">We Go Live Properly</h3>
+          <p class="process-detail-desc">No soft launches. No quiet drops. We plan the go-live like a product launch — coordinated across channels, with assets prepped, audiences primed, and everything lined up to hit hard from day one.</p>
+          <div class="process-detail-deliverables">
+            <span class="process-detail-tag">Launch strategy</span>
+            <span class="process-detail-tag">Cross-channel rollout</span>
+            <span class="process-detail-tag">Day-1 monitoring</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="process-detail-step process-detail-step--last" data-animate="fadeUp" data-animate-delay="320">
+        <div class="process-detail-left">
+          <div class="process-detail-num" aria-hidden="true">05</div>
+        </div>
+        <div class="process-detail-content">
+          <span class="process-detail-phase" aria-label="Phase 5">SCALE</span>
+          <h3 class="process-detail-title">We Send You the Receipts</h3>
+          <p class="process-detail-desc">Post-launch, we don't disappear. We track results, report on performance, optimize what needs optimizing, and plan the next move. Growth is a direction, not a destination.</p>
+          <div class="process-detail-deliverables">
+            <span class="process-detail-tag">Performance reports</span>
+            <span class="process-detail-tag">Ongoing optimization</span>
+            <span class="process-detail-tag">Scale strategy</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /process-detail-track -->
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     WHY 2BROS — THEM VS US TABLE
+============================================================ -->
+<section class="versus-section section-pad" aria-labelledby="versus-headline">
+  <div class="container">
+
+    <div class="section-header" data-animate="fadeUp">
+      <span class="section-tag">// THE HONEST TRUTH</span>
+      <h2 class="section-headline" id="versus-headline">THEM VS US</h2>
+      <p class="section-sub">We didn't build this comparison. Our clients did, after trying the alternatives.</p>
+    </div>
+
+    <div class="versus-table-wrap" data-animate="fadeUp" data-animate-delay="80">
+      <table class="versus-table" aria-label="Comparison between typical agencies and 2Bros Media">
+        <thead>
+          <tr>
+            <th scope="col" class="versus-th versus-th--feature">What you care about</th>
+            <th scope="col" class="versus-th versus-th--them">
+              <span class="versus-label versus-label--them">Typical Agency</span>
+            </th>
+            <th scope="col" class="versus-th versus-th--us">
+              <span class="versus-label versus-label--us">2Bros Media</span>
+              <span class="versus-best-badge" aria-label="Recommended choice">THE CHOICE</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="versus-row">
+            <td class="versus-feature">Turnaround Time</td>
+            <td class="versus-them">
+              <span class="versus-x" aria-label="No">✗</span>
+              <span>8–16 weeks. Maybe.</span>
+            </td>
+            <td class="versus-us">
+              <span class="versus-check" aria-label="Yes">✓</span>
+              <span>2–6 weeks. Always.</span>
+            </td>
+          </tr>
+          <tr class="versus-row">
+            <td class="versus-feature">Who actually does your work</td>
+            <td class="versus-them">
+              <span class="versus-x" aria-label="No">✗</span>
+              <span>An intern in a different time zone</span>
+            </td>
+            <td class="versus-us">
+              <span class="versus-check" aria-label="Yes">✓</span>
+              <span>The founders. Every time.</span>
+            </td>
+          </tr>
+          <tr class="versus-row">
+            <td class="versus-feature">Strategy</td>
+            <td class="versus-them">
+              <span class="versus-x" aria-label="No">✗</span>
+              <span>Template PDF renamed to your company</span>
+            </td>
+            <td class="versus-us">
+              <span class="versus-check" aria-label="Yes">✓</span>
+              <span>Custom-built for your brand</span>
+            </td>
+          </tr>
+          <tr class="versus-row">
+            <td class="versus-feature">Communication</td>
+            <td class="versus-them">
+              <span class="versus-x" aria-label="No">✗</span>
+              <span>Weekly email. If that.</span>
+            </td>
+            <td class="versus-us">
+              <span class="versus-check" aria-label="Yes">✓</span>
+              <span>Real-time. Direct. No middlemen.</span>
+            </td>
+          </tr>
+          <tr class="versus-row">
+            <td class="versus-feature">Contract Length</td>
+            <td class="versus-them">
+              <span class="versus-x" aria-label="No">✗</span>
+              <span>12-month lock-in. Surprise.</span>
+            </td>
+            <td class="versus-us">
+              <span class="versus-check" aria-label="Yes">✓</span>
+              <span>Project-based. You stay because you want to.</span>
+            </td>
+          </tr>
+          <tr class="versus-row">
+            <td class="versus-feature">Results reporting</td>
+            <td class="versus-them">
+              <span class="versus-x" aria-label="No">✗</span>
+              <span>Vanity metrics. Pretty charts. Nothing actionable.</span>
+            </td>
+            <td class="versus-us">
+              <span class="versus-check" aria-label="Yes">✓</span>
+              <span>Revenue, leads, and ROI. The receipts.</span>
+            </td>
+          </tr>
+          <tr class="versus-row">
+            <td class="versus-feature">Ego check</td>
+            <td class="versus-them">
+              <span class="versus-x" aria-label="No">✗</span>
+              <span>Awards wall. Name-dropping. No results.</span>
+            </td>
+            <td class="versus-us">
+              <span class="versus-check" aria-label="Yes">✓</span>
+              <span>Our portfolio speaks. Loudly.</span>
+            </td>
+          </tr>
+          <tr class="versus-row">
+            <td class="versus-feature">What they care about</td>
+            <td class="versus-them">
+              <span class="versus-x" aria-label="No">✗</span>
+              <span>Retaining your contract</span>
+            </td>
+            <td class="versus-us">
+              <span class="versus-check" aria-label="Yes">✓</span>
+              <span>Earning your referral</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     CTA SECTION
+============================================================ -->
+<section class="cta-banner" aria-labelledby="about-cta-headline">
+  <div class="cta-banner-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="cta-banner-inner" data-animate="fadeUp">
+      <span class="section-tag cta-tag">// YOUR MOVE</span>
+      <h2 class="cta-headline" id="about-cta-headline">
+        STOP SETTLING.<br>
+        <em style="font-style:italic; color: var(--color-muted);">Work With Bros Who Deliver.</em>
+      </h2>
+      <p class="cta-sub">
+        Free consultation. No pressure.<br>Just an honest conversation about what your brand actually needs.
+      </p>
+      <div class="cta-banner-actions">
+        <a href="contact.html" class="btn btn-primary btn-xl">Get a Free Consultation →</a>
+        <a href="services.html" class="btn btn-outline btn-xl">See What We Do</a>
+      </div>
+      <p class="cta-reassurance">
+        <span class="cta-check" aria-hidden="true">✓</span> Free consultation &nbsp;·&nbsp;
+        <span class="cta-check" aria-hidden="true">✓</span> Response within 24hrs &nbsp;·&nbsp;
+        <span class="cta-check" aria-hidden="true">✓</span> No boring brands. Ever.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo" aria-label="2Bros Media homepage">
+          <div class="nav-logo-mark" aria-hidden="true">2B</div>
+          <span class="nav-logo-text">2BROS <span>MEDIA</span></span>
+        </a>
+        <p class="footer-tagline">Your brand, but actually good.</p>
+        <div class="footer-socials" aria-label="Social media links">
+          <a href="https://instagram.com/2brosmedia" class="footer-social" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="https://linkedin.com/company/2brosmedia" class="footer-social" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M7 10v7M7 7v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M11 17v-4c0-1.5 1-2 2-2s2 .5 2 2v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M11 10v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <a href="https://tiktok.com/@2brosmedia" class="footer-social" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="https://twitter.com/2brosmedia" class="footer-social" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 4l16 16M4 20L20 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav-col">
+          <h4 class="footer-nav-heading">Pages</h4>
+          <ul role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-col">
+          <h4 class="footer-nav-heading">Services</h4>
+          <ul role="list">
+            <li><a href="services.html#brand-identity">Brand Identity</a></li>
+            <li><a href="services.html#web-design">Web Design</a></li>
+            <li><a href="services.html#social-media">Social Media</a></li>
+            <li><a href="services.html#video">Video Production</a></li>
+            <li><a href="services.html#paid-ads">Paid Ads</a></li>
+            <li><a href="services.html#seo">SEO &amp; Content</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="footer-cta-col">
+        <h4 class="footer-nav-heading">Get Started</h4>
+        <p class="footer-cta-text">Stop suffering. Free consultation. We'll show you exactly what your brand is missing.</p>
+        <a href="contact.html" class="btn btn-primary" style="margin-top:16px">Apply For Greatness →</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 2Bros Media. All rights reserved. <span class="footer-built">Built different.</span></p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <span aria-hidden="true">·</span>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ============================================================
+     JAVASCRIPT
+============================================================ -->
+<script>
+  // ---- STICKY NAV ----
+  (function() {
+    const nav   = document.getElementById('main-nav');
+    const cta   = document.getElementById('nav-cta-desktop');
+    let ticking = false;
+    function onScroll() {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          if (window.scrollY > 50) {
+            nav.classList.add('scrolled');
+            if (cta) cta.style.display = 'inline-flex';
+          } else {
+            nav.classList.remove('scrolled');
+            if (cta) cta.style.display = 'none';
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  })();
+
+  // ---- MOBILE MENU ----
+  (function() {
+    const hamburger  = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeBtn   = document.getElementById('mobile-close');
+    const open  = () => { mobileMenu.classList.add('open');    hamburger.setAttribute('aria-expanded','true');  document.body.style.overflow = 'hidden'; };
+    const close = () => { mobileMenu.classList.remove('open'); hamburger.setAttribute('aria-expanded','false'); document.body.style.overflow = ''; };
+    if (hamburger)  hamburger.addEventListener('click', open);
+    if (closeBtn)   closeBtn.addEventListener('click', close);
+    if (mobileMenu) mobileMenu.addEventListener('click', e => { if (e.target === mobileMenu) close(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+  })();
+
+  // ---- INTERSECTION OBSERVER ANIMATIONS ----
+  (function() {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el    = entry.target;
+        const delay = el.dataset.animateDelay ? parseInt(el.dataset.animateDelay) : 0;
+        setTimeout(() => el.classList.add('in-view'), delay);
+        observer.unobserve(el);
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+
+    // Stagger children
+    document.querySelectorAll('[data-stagger]').forEach(parent => {
+      parent.querySelectorAll('[data-animate]').forEach((child, i) => {
+        if (!child.dataset.animateDelay) child.dataset.animateDelay = i * 80;
+      });
+    });
+  })();
+
+  // ---- COUNTER ANIMATION ----
+  (function() {
+    const seen = new Set();
+    const counterObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting || seen.has(entry.target)) return;
+        seen.add(entry.target);
+        const el     = entry.target;
+        const target = parseFloat(el.dataset.counter);
+        const isFloat = target % 1 !== 0;
+        const dur    = 1400;
+        const start  = performance.now();
+        (function step(now) {
+          const p = Math.min((now - start) / dur, 1);
+          const e = 1 - Math.pow(1 - p, 3);
+          el.textContent = isFloat ? (e * target).toFixed(1) : Math.floor(e * target);
+          if (p < 1) requestAnimationFrame(step);
+          else el.textContent = isFloat ? target.toFixed(1) : target;
+        })(start);
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('[data-counter]').forEach(el => counterObserver.observe(el));
+  })();
+</script>
+
+</body>
+</html>

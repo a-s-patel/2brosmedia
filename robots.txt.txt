@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://2bros.click/sitemap.xml
+
+Disallow: /draft/
+Disallow: /test/
