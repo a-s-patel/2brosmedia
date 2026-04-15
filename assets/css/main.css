@@ -1331,7 +1331,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
-  align-items: center;
+  align-items: start;
 }
 
 @media (min-width: 860px) {
@@ -1348,8 +1348,9 @@
 
 .hero-img-col {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  padding-top: 20px;
 }
 
 .hero-brand-img {
