@@ -913,13 +913,18 @@
           headers: { 'Accept': 'application/json' }
         });
 
-        if (res.ok) {
-          // SUCCESS
-          form.hidden = true;
-          success.hidden = false;
-          success.focus();
-          // Scroll success into view
-          success.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if (res.ok) {
+        // Fire GA4 lead conversion event
+        gtag('event', 'generate_lead', {
+          'event_category': 'Contact Form',
+          'event_label': 'Free Consultation Request',
+          'value': 1
+        });
+        // SUCCESS
+        form.hidden = true;
+        success.hidden = false;
+        success.focus();
+        success.scrollIntoView({ behavior: 'smooth', block: 'start' });
         } else {
           throw new Error('Server error: ' + res.status);
         }
@@ -944,5 +949,6 @@
   })();
 </script>
 
+<script defer src="/assets/js/tracking.js"></script>
 </body>
 </html>
