@@ -6,24 +6,24 @@
   ============================================================ -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services | 2Bros Media — The Full Arsenal</title>
-  <meta name="description" content="Branding, web design, social media management, video production, paid ads, SEO, photography, and brand strategy. 2Bros Media's full arsenal of creative services — built to make your brand impossible to ignore.">
-  <meta name="keywords" content="creative agency services, brand identity, web design, social media management, video production, paid ads management, SEO content strategy, brand photography, brand strategy">
+  <title>Services | 2Bros Media — Performance, Growth & Acquisition</title>
+  <meta name="description" content="Performance marketing, user acquisition strategy, growth consulting, social media management, brand identity, and app store optimization. 2Bros Media builds acquisition systems that compound — revenue-first, always.">
+  <meta name="keywords" content="performance marketing agency, user acquisition strategy, growth strategy, paid ads management, social media management, brand identity, app store optimization, ASO, 2Bros Media services">
   <meta name="author" content="2Bros Media">
-  <link rel="canonical" href="https://2bros.click/services.html">
+  <link rel="canonical" href="https://2bros.click/services/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://2bros.click/services.html">
-  <meta property="og:title" content="Services | 2Bros Media — The Full Arsenal">
-  <meta property="og:description" content="Eight weapons. One goal: make you impossible to ignore. See the full 2Bros Media service lineup.">
+  <meta property="og:url" content="https://2bros.click/services/">
+  <meta property="og:title" content="Services | 2Bros Media — Performance, Growth & Acquisition">
+  <meta property="og:description" content="Six disciplines. One goal: scale your revenue. See the full 2Bros Media service lineup.">
   <meta property="og:image" content="https://2bros.click/assets/images/og-image.jpg">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@2brosmedia">
-  <meta name="twitter:title" content="Services | 2Bros Media — The Full Arsenal">
-  <meta name="twitter:description" content="Eight weapons. One goal: make you impossible to ignore. See the full 2Bros Media service lineup.">
+  <meta name="twitter:title" content="Services | 2Bros Media — Performance, Growth & Acquisition">
+  <meta name="twitter:description" content="Six disciplines. One goal: scale your revenue. See the full 2Bros Media service lineup.">
   <meta name="twitter:image" content="https://2bros.click/assets/images/og-image.jpg">
 
   <!-- Favicons -->
@@ -36,26 +36,24 @@
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "2Bros Media — Creative Agency Services",
+    "name": "2Bros Media — Performance Marketing & Growth Services",
     "provider": {
       "@type": "Organization",
       "name": "2Bros Media",
       "url": "https://2bros.click"
     },
-    "description": "Full-service creative agency offering brand identity, web design, social media management, video production, paid ads, SEO, photography, and brand strategy.",
-    "url": "https://2bros.click/services.html",
+    "description": "Performance marketing, user acquisition strategy, growth consulting, social media management, brand identity, and app store optimization services.",
+    "url": "https://2bros.click/services/",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "2Bros Media Services",
       "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brand Identity" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website Design & Development" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Performance Marketing" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "User Acquisition Strategy" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Growth Strategy & Consulting" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Social Media Management" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Video Production" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Paid Ads Management" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO & Content Strategy" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Photography" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brand Strategy & Consulting" } }
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brand Identity & Creative" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "App Store Optimization" } }
       ]
     }
   }
@@ -84,7 +82,6 @@
     a { color: inherit; text-decoration: none; }
     ul { list-style: none; }
     button { cursor: pointer; border: none; background: none; font: inherit; }
-
     :root {
       --color-bg:          #050f0a;
       --color-surface:     #0a1f13;
@@ -106,32 +103,26 @@
       --radius:       4px;
       --radius-lg:    12px;
     }
-
-    /* NAV — critical */
     .nav {
       position: fixed; top: 0; left: 0; right: 0;
       z-index: 1000; height: var(--nav-h);
-      display: flex; align-items: center;
-      padding: 0 var(--gutter);
+      display: flex; align-items: center; padding: 0 var(--gutter);
       transition: background .3s ease, backdrop-filter .3s ease, border-bottom .3s ease;
     }
     .nav.scrolled {
       background: rgba(5,15,10,0.92);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--color-border);
     }
     .nav-inner {
-      width: 100%; max-width: var(--container);
-      margin: 0 auto; display: flex;
-      align-items: center; justify-content: space-between; gap: 24px;
+      width: 100%; max-width: var(--container); margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between; gap: 24px;
     }
     .nav-logo { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
     .nav-logo-mark {
-      width: 36px; height: 36px; background: var(--color-emerald);
-      border-radius: 6px; display: flex; align-items: center; justify-content: center;
-      font-family: var(--font-display); font-size: 18px;
-      color: var(--color-bg); letter-spacing: -1px;
+      width: 36px; height: 36px; background: var(--color-emerald); border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-size: 18px; color: var(--color-bg); letter-spacing: -1px;
     }
     .nav-logo-text { font-family: var(--font-display); font-size: 22px; letter-spacing: .05em; color: var(--color-white); }
     .nav-logo-text span { color: var(--color-emerald); }
@@ -146,14 +137,6 @@
 
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="/assets/css/services.css">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SQSV4N3N9W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-SQSV4N3N9W');
-</script>
 </head>
 
 <body>
@@ -164,7 +147,7 @@
 <nav class="nav" id="main-nav" role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
     <a href="/" class="nav-logo" aria-label="2Bros Media — Home">
-      <div class="nav-logo-mark" aria-hidden="true">2BM</div>
+      <div class="nav-logo-mark" aria-hidden="true">2B</div>
       <span class="nav-logo-text">2BROS <span>MEDIA</span></span>
     </a>
     <ul class="nav-links" role="list">
@@ -203,41 +186,39 @@
 
 
 <!-- ============================================================
-     HERO — THE ARSENAL
+     HERO
 ============================================================ -->
 <section class="svc-hero" id="hero" aria-labelledby="svc-hero-headline">
-  <div class="svc-hero-bg" aria-hidden="true"></div>
+  <div class="svc-hero-bg"   aria-hidden="true"></div>
   <div class="svc-hero-grid" aria-hidden="true"></div>
-  <div class="svc-hero-watermark" aria-hidden="true">ARSENAL</div>
+  <div class="svc-hero-watermark" aria-hidden="true">GROWTH</div>
 
   <div class="container svc-hero-inner">
 
     <div class="svc-hero-text">
-      <span class="section-tag" data-animate="fadeUp">// THE FULL SERVICE LINEUP</span>
+      <span class="section-tag" data-animate="fadeUp">// WHAT WE DO</span>
       <h1 class="svc-hero-headline" id="svc-hero-headline" data-animate="fadeUp" data-animate-delay="80">
         THE<br>
-        <em class="svc-hero-em">WEAPONS</em>
+        <em class="svc-hero-em">PLAYBOOK</em>
       </h1>
       <p class="svc-hero-sub" data-animate="fadeUp" data-animate-delay="180">
-        Eight disciplines. Every one battle-tested. All of them aimed at the same target: making your brand impossible to ignore.
+        Six disciplines. Every one revenue-first. All of them built to scale what actually matters — your growth.
       </p>
       <div class="svc-hero-actions" data-animate="fadeUp" data-animate-delay="260">
         <a href="/contact/" class="btn btn-primary btn-lg">Get a Free Consult →</a>
-        <a href="#services-grid" class="btn btn-ghost btn-lg">See the Arsenal ↓</a>
+        <a href="#services-grid" class="btn btn-ghost btn-lg">See the Playbook ↓</a>
       </div>
     </div>
 
     <!-- Service index — right side -->
     <nav class="svc-hero-index" aria-label="Jump to service" data-animate="fadeUp" data-animate-delay="200">
       <ul role="list">
-        <li><a href="#brand-identity" class="svc-index-link"><span class="svc-index-num">01</span><span>Brand Identity</span><span class="svc-index-arrow">→</span></a></li>
-        <li><a href="#web-design"      class="svc-index-link"><span class="svc-index-num">02</span><span>Website Design &amp; Dev</span><span class="svc-index-arrow">→</span></a></li>
-        <li><a href="#social-media"    class="svc-index-link"><span class="svc-index-num">03</span><span>Social Media Management</span><span class="svc-index-arrow">→</span></a></li>
-        <li><a href="#video"           class="svc-index-link"><span class="svc-index-num">04</span><span>Video Production</span><span class="svc-index-arrow">→</span></a></li>
-        <li><a href="#paid-ads"        class="svc-index-link"><span class="svc-index-num">05</span><span>Paid Ads Management</span><span class="svc-index-arrow">→</span></a></li>
-        <li><a href="#seo"             class="svc-index-link"><span class="svc-index-num">06</span><span>SEO &amp; Content Strategy</span><span class="svc-index-arrow">→</span></a></li>
-        <li><a href="#photography"     class="svc-index-link"><span class="svc-index-num">07</span><span>Photography</span><span class="svc-index-arrow">→</span></a></li>
-        <li><a href="#brand-strategy"  class="svc-index-link"><span class="svc-index-num">08</span><span>Brand Strategy &amp; Consulting</span><span class="svc-index-arrow">→</span></a></li>
+        <li><a href="#performance-marketing" class="svc-index-link"><span class="svc-index-num">01</span><span>Performance Marketing</span><span class="svc-index-arrow">→</span></a></li>
+        <li><a href="#user-acquisition"      class="svc-index-link"><span class="svc-index-num">02</span><span>User Acquisition Strategy</span><span class="svc-index-arrow">→</span></a></li>
+        <li><a href="#growth-strategy"       class="svc-index-link"><span class="svc-index-num">03</span><span>Growth Strategy &amp; Consulting</span><span class="svc-index-arrow">→</span></a></li>
+        <li><a href="#social-media"          class="svc-index-link"><span class="svc-index-num">04</span><span>Social Media Management</span><span class="svc-index-arrow">→</span></a></li>
+        <li><a href="#brand-identity"        class="svc-index-link"><span class="svc-index-num">05</span><span>Brand Identity &amp; Creative</span><span class="svc-index-arrow">→</span></a></li>
+        <li><a href="#aso"                 class="svc-index-link"><span class="svc-index-num">06</span><span>App Store Optimization</span><span class="svc-index-arrow">→</span></a></li>
       </ul>
     </nav>
 
@@ -246,23 +227,301 @@
 
 
 <!-- ============================================================
-     SERVICES GRID — ALL 8 SERVICES
+     SERVICES GRID — ALL 6 SERVICES
 ============================================================ -->
 <section class="svc-grid-section section-pad" id="services-grid" aria-labelledby="svc-grid-headline">
   <div class="container">
 
     <div class="section-header" data-animate="fadeUp">
       <span class="section-tag">// WHAT WE DELIVER</span>
-      <h2 class="section-headline" id="svc-grid-headline">THE ARSENAL</h2>
-      <p class="section-sub">Pick one weapon. Deploy them all. Either way, your brand doesn't lose.</p>
+      <h2 class="section-headline" id="svc-grid-headline">THE FULL<br>PLAYBOOK</h2>
+      <p class="section-sub">Pick one discipline. Stack them all. Either way, the goal is the same — more revenue, more scale, more compound growth.</p>
     </div>
 
-    <!-- ─── SERVICE 01 — BRAND IDENTITY ─── -->
-    <article class="svc-card" id="brand-identity" aria-labelledby="svc-brand-title">
+    <!-- ─── SERVICE 01 — PERFORMANCE MARKETING ─── -->
+    <article class="svc-card svc-card--featured" id="performance-marketing" aria-labelledby="svc-perf-title">
+      <div class="svc-card-featured-ribbon" aria-label="Core service">CORE SERVICE</div>
       <div class="svc-card-inner">
 
         <div class="svc-card-left">
           <div class="svc-card-num" aria-hidden="true">01</div>
+          <div class="svc-card-icon" aria-hidden="true">
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+              <path d="M6 40L16 24l10 11 8-9 12 14H6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
+              <circle cx="42" cy="10" r="7" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M39 10h6M42 7v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M8 46h36" stroke="currentColor" stroke-width="1" opacity="0.3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="svc-card-badge-wrap">
+            <span class="svc-card-badge svc-card-badge--roi">PRINTS ROI</span>
+          </div>
+        </div>
+
+        <div class="svc-card-body">
+          <span class="svc-card-tag-label">// 01</span>
+          <h3 class="svc-card-title" id="svc-perf-title">Performance Marketing</h3>
+          <p class="svc-card-tagline">"We spend your money like it's ours. Carefully."</p>
+          <p class="svc-card-desc">
+            Most agencies run your ads. We engineer them. There's a real difference — one burns budget on hunches, the other builds data-driven campaigns with clear entry criteria, obsessive A/B testing, and reporting that tells you exactly what your money is doing at all times.
+          </p>
+          <p class="svc-card-desc">
+            We manage full-funnel paid campaigns across Meta, Google, TikTok, and programmatic — from cold audience acquisition at the top of funnel through to retargeting and conversion campaigns at the bottom. Every dollar has a job. We make sure it does it.
+          </p>
+
+          <div class="svc-card-cols">
+            <div>
+              <h4 class="svc-card-col-heading">What You Get</h4>
+              <ul class="svc-card-list" aria-label="Performance Marketing deliverables">
+                <li>Full campaign strategy &amp; funnel architecture</li>
+                <li>Ad creative production (static, video, carousel)</li>
+                <li>Audience research &amp; targeting setup</li>
+                <li>Campaign build, launch &amp; daily management</li>
+                <li>Ongoing A/B testing &amp; creative refresh</li>
+                <li>Weekly performance reports</li>
+                <li>Monthly strategy call &amp; budget review</li>
+                <li>Pixel setup &amp; conversion tracking</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="svc-card-col-heading">Platforms We Run</h4>
+              <ul class="svc-card-list" aria-label="Ad platforms">
+                <li>Meta Ads (Facebook &amp; Instagram)</li>
+                <li>Google Ads (Search, Display, YouTube)</li>
+                <li>TikTok Ads</li>
+                <li>LinkedIn Ads (B2B focus)</li>
+                <li>Programmatic / display networks</li>
+                <li>DSPs &amp; demand-side platforms</li>
+              </ul>
+              <div class="svc-card-result-block" style="margin-top: 20px;">
+                <span class="svc-result-num">4.8×</span>
+                <span class="svc-result-label">ROAS achieved for Vault Financial — was 1.2× before us</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="svc-card-footer">
+            <a href="/contact/" class="btn btn-primary">Start a Campaign →</a>
+            <a href="/results/" class="btn btn-ghost">See Ad Results ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- ─── SERVICE 02 — USER ACQUISITION STRATEGY ─── -->
+    <article class="svc-card" id="user-acquisition" aria-labelledby="svc-ua-title">
+      <div class="svc-card-inner svc-card-inner--alt">
+
+        <div class="svc-card-left">
+          <div class="svc-card-num" aria-hidden="true">02</div>
+          <div class="svc-card-icon" aria-hidden="true">
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+              <circle cx="26" cy="26" r="20" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <circle cx="26" cy="26" r="12" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <circle cx="26" cy="26" r="4"  fill="currentColor"/>
+              <path d="M26 6v8M26 38v8M6 26h8M38 26h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+            </svg>
+          </div>
+          <div class="svc-card-badge-wrap">
+            <span class="svc-card-badge svc-card-badge--compound">SCALES</span>
+          </div>
+        </div>
+
+        <div class="svc-card-body">
+          <span class="svc-card-tag-label">// 02</span>
+          <h3 class="svc-card-title" id="svc-ua-title">User Acquisition Strategy</h3>
+          <p class="svc-card-tagline">"Stop guessing which channels work. We build the system."</p>
+          <p class="svc-card-desc">
+            Scattered channel spend and no attribution framework isn't a UA strategy — it's expensive guessing. We build data-driven acquisition systems that identify your best-performing channels, allocate budget with precision, and create a test-and-scale framework that compounds over time.
+          </p>
+          <p class="svc-card-desc">
+            Whether you're launching a new product, entering a new market, or trying to break through a growth ceiling — we build the architecture that tells you exactly where to push harder and where to stop spending.
+          </p>
+
+          <div class="svc-card-cols">
+            <div>
+              <h4 class="svc-card-col-heading">What You Get</h4>
+              <ul class="svc-card-list" aria-label="User Acquisition Strategy deliverables">
+                <li>Multi-channel acquisition plan</li>
+                <li>Channel mix &amp; budget allocation model</li>
+                <li>Persona-based creative strategy</li>
+                <li>Test-and-scale frameworks</li>
+                <li>CPI / CPA / ROAS target setting</li>
+                <li>Attribution setup &amp; tracking</li>
+                <li>Media partner evaluation framework</li>
+                <li>6–12 month acquisition roadmap</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="svc-card-col-heading">Who It's For</h4>
+              <ul class="svc-card-list" aria-label="Who UA Strategy is for">
+                <li>Apps scaling beyond early installs</li>
+                <li>Brands entering new markets or geos</li>
+                <li>Companies with inconsistent paid performance</li>
+                <li>Teams spending on ads without clear attribution</li>
+                <li>Founders who need a real acquisition plan</li>
+              </ul>
+              <div class="svc-card-result-block" style="margin-top: 20px;">
+                <span class="svc-result-num">1M</span>
+                <span class="svc-result-label">installs delivered for Family Safety App · 33% paid-to-subscription</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="svc-card-footer">
+            <a href="/contact/" class="btn btn-primary">Build Your UA System →</a>
+            <a href="/results/" class="btn btn-ghost">See UA Results ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- ─── SERVICE 03 — GROWTH STRATEGY & CONSULTING ─── -->
+    <article class="svc-card" id="growth-strategy" aria-labelledby="svc-growth-title">
+      <div class="svc-card-inner">
+
+        <div class="svc-card-left">
+          <div class="svc-card-num" aria-hidden="true">03</div>
+          <div class="svc-card-icon" aria-hidden="true">
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+              <path d="M8 44L18 28l10 12 8-10 8 14H8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
+              <path d="M36 14l6 6M36 14h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 44h36" stroke="currentColor" stroke-width="1" opacity="0.3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="svc-card-badge-wrap">
+            <span class="svc-card-badge svc-card-badge--brain">THE BRAIN</span>
+          </div>
+        </div>
+
+        <div class="svc-card-body">
+          <span class="svc-card-tag-label">// 03</span>
+          <h3 class="svc-card-title" id="svc-growth-title">Growth Strategy &amp; Consulting</h3>
+          <p class="svc-card-tagline">"You've hit a ceiling. We break it."</p>
+          <p class="svc-card-desc">
+            Sometimes you don't need execution — you need to think clearly before you execute. Growth strategy is the work that happens before we touch a single campaign, write a single ad, or allocate a single dollar. It's the architecture that makes everything else work harder.
+          </p>
+          <p class="svc-card-desc">
+            We work with founders, CMOs, and leadership teams to audit performance, model unit economics, identify the highest-leverage channels, and build a 6–12 month roadmap with KPIs the entire organization can align around.
+          </p>
+
+          <div class="svc-card-cols">
+            <div>
+              <h4 class="svc-card-col-heading">What You Get</h4>
+              <ul class="svc-card-list" aria-label="Growth Strategy deliverables">
+                <li>Full growth audit (channels, spend, performance)</li>
+                <li>Unit economics modeling (LTV, CAC, ROAS)</li>
+                <li>Channel prioritization &amp; budget allocation</li>
+                <li>Revenue &amp; scaling milestones</li>
+                <li>Competitive landscape analysis</li>
+                <li>Go-to-market strategy framework</li>
+                <li>KPI framework &amp; reporting structure</li>
+                <li>12-month growth roadmap</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="svc-card-col-heading">Who It's For</h4>
+              <ul class="svc-card-list" aria-label="Who Growth Strategy is for">
+                <li>Founders scaling past product-market fit</li>
+                <li>Post-fundraise teams entering new markets</li>
+                <li>Companies whose growth has plateaued</li>
+                <li>CMOs who need an outside perspective</li>
+                <li>Teams spending without a clear north star</li>
+              </ul>
+              <div class="svc-card-result-block" style="margin-top: 20px;">
+                <span class="svc-result-num">$1.3M</span>
+                <span class="svc-result-label">revenue in 9 months for Fertility Tech — from strategy to execution</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="svc-card-footer">
+            <a href="/contact/" class="btn btn-primary">Build Your Growth Plan →</a>
+            <a href="/results/" class="btn btn-ghost">See Growth Results ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- ─── SERVICE 04 — SOCIAL MEDIA MANAGEMENT ─── -->
+    <article class="svc-card" id="social-media" aria-labelledby="svc-social-title">
+      <div class="svc-card-inner svc-card-inner--alt">
+
+        <div class="svc-card-left">
+          <div class="svc-card-num" aria-hidden="true">04</div>
+          <div class="svc-card-icon" aria-hidden="true">
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+              <circle cx="26" cy="26" r="20" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M26 10C20 17 17 21 17 26s3 11 9 16M26 10c6 7 9 11 9 16s-3 11-9 16" stroke="currentColor" stroke-width="1" opacity="0.25"/>
+              <path d="M6 26h40" stroke="currentColor" stroke-width="1" opacity="0.25"/>
+              <path d="M19 21l6 5-6 5M33 21l-6 5 6 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="svc-card-badge-wrap">
+            <span class="svc-card-badge svc-card-badge--viral">COMPOUNDS</span>
+          </div>
+        </div>
+
+        <div class="svc-card-body">
+          <span class="svc-card-tag-label">// 04</span>
+          <h3 class="svc-card-title" id="svc-social-title">Social Media Management</h3>
+          <p class="svc-card-tagline">"Organic reach that compounds. Zero mediocre posts."</p>
+          <p class="svc-card-desc">
+            Social media is your highest-leverage organic acquisition channel — and most brands are treating it like a bulletin board. We manage your full social presence with one goal: building an audience that converts. Every post is strategic. Every caption earns its place. Every platform is treated like the business asset it is.
+          </p>
+          <p class="svc-card-desc">
+            We don't just post content — we study your audience, test creative formats, analyze what drives real engagement versus vanity metrics, and build a feed that makes your competitors' teams nervous.
+          </p>
+
+          <div class="svc-card-cols">
+            <div>
+              <h4 class="svc-card-col-heading">What You Get</h4>
+              <ul class="svc-card-list" aria-label="Social Media Management deliverables">
+                <li>Monthly content strategy &amp; calendar</li>
+                <li>Original graphics, photos &amp; video content</li>
+                <li>On-brand caption copy for every post</li>
+                <li>Scheduled posting &amp; platform management</li>
+                <li>Community management &amp; DM handling</li>
+                <li>Hashtag &amp; organic SEO strategy</li>
+                <li>Monthly analytics report with insights</li>
+                <li>Quarterly strategy review &amp; pivots</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="svc-card-col-heading">Platforms We Cover</h4>
+              <ul class="svc-card-list" aria-label="Social media platforms">
+                <li>Instagram &amp; Instagram Reels</li>
+                <li>TikTok</li>
+                <li>LinkedIn (personal + company pages)</li>
+                <li>Facebook &amp; Facebook Groups</li>
+                <li>X / Twitter</li>
+                <li>YouTube Shorts</li>
+              </ul>
+              <div class="svc-card-result-block" style="margin-top: 20px;">
+                <span class="svc-result-num">347%</span>
+                <span class="svc-result-label">engagement lift · 40K followers in 90 days for Boutique Fitness Studio</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="svc-card-footer">
+            <a href="/contact/" class="btn btn-primary">Start Social Management →</a>
+            <a href="/portfolio/" class="btn btn-ghost">See Social Work ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- ─── SERVICE 05 — BRAND IDENTITY & CREATIVE ─── -->
+    <article class="svc-card" id="brand-identity" aria-labelledby="svc-brand-title">
+      <div class="svc-card-inner">
+
+        <div class="svc-card-left">
+          <div class="svc-card-num" aria-hidden="true">05</div>
           <div class="svc-card-icon" aria-hidden="true">
             <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
               <path d="M26 6L46 17V35L26 46L6 35V17L26 6Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
@@ -277,14 +536,14 @@
         </div>
 
         <div class="svc-card-body">
-          <span class="svc-card-tag-label">// 01</span>
-          <h3 class="svc-card-title" id="svc-brand-title">Brand Identity</h3>
-          <p class="svc-card-tagline">"Stop looking like a Canva template."</p>
+          <span class="svc-card-tag-label">// 05</span>
+          <h3 class="svc-card-title" id="svc-brand-title">Brand Identity &amp; Creative</h3>
+          <p class="svc-card-tagline">"Great creative makes your acquisition cheaper. Always."</p>
           <p class="svc-card-desc">
-            Your brand is the first thing people judge — and they judge it in less than a second. We build the complete visual and verbal identity that makes your brand unmistakable: the logo system that scales from a favicon to a billboard, the color palette that owns a corner of your audience's mind, the typography that speaks before you say a word.
+            Performance marketing without strong creative is just expensive traffic. The brands that scale fastest are the ones whose creative stops the scroll before the algorithm even gets to work. We build brand identities and creative systems that make your paid and organic channels perform better — because when the brand is right, everything costs less.
           </p>
           <p class="svc-card-desc">
-            This isn't decoration. It's infrastructure. Every other piece of marketing you ever run — ads, social, video, web — gets better when the brand underneath it is bulletproof.
+            From complete visual identity systems to ad creative production and content strategy — every deliverable is designed with performance in mind, not just aesthetics.
           </p>
 
           <div class="svc-card-cols">
@@ -293,9 +552,8 @@
               <ul class="svc-card-list" aria-label="Brand Identity deliverables">
                 <li>Primary &amp; secondary logo system</li>
                 <li>Full color palette with usage rules</li>
-                <li>Typography system (display + body + mono)</li>
-                <li>Brand voice &amp; tone guidelines</li>
-                <li>Business card &amp; stationery design</li>
+                <li>Typography system &amp; brand voice</li>
+                <li>Ad creative production system</li>
                 <li>Social media profile kit</li>
                 <li>Brand guidelines document (PDF + Figma)</li>
                 <li>All source files (AI, SVG, PNG, EPS)</li>
@@ -304,14 +562,14 @@
             <div>
               <h4 class="svc-card-col-heading">Who It's For</h4>
               <ul class="svc-card-list" aria-label="Who Brand Identity is for">
-                <li>Founders launching a new venture</li>
-                <li>Established brands that have outgrown their look</li>
-                <li>Companies preparing for a fundraise or acquisition</li>
-                <li>Anyone who's been told "your logo is giving 2009"</li>
+                <li>Founders building a brand from scratch</li>
+                <li>Scaling companies whose creative has gone stale</li>
+                <li>Performance teams whose CTR is declining</li>
+                <li>Brands preparing for a raise or launch</li>
               </ul>
               <div class="svc-card-result-block" style="margin-top: 20px;">
                 <span class="svc-result-num">280%</span>
-                <span class="svc-result-label">avg. brand recognition lift in 60 days</span>
+                <span class="svc-result-label">brand recognition lift in 60 days for Architecture Firm</span>
               </div>
             </div>
           </div>
@@ -325,495 +583,69 @@
       </div>
     </article>
 
-    <!-- ─── SERVICE 02 — WEB DESIGN ─── -->
-    <article class="svc-card" id="web-design" aria-labelledby="svc-web-title">
-      <div class="svc-card-inner svc-card-inner--alt">
-
-        <div class="svc-card-left">
-          <div class="svc-card-num" aria-hidden="true">02</div>
-          <div class="svc-card-icon" aria-hidden="true">
-            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
-              <rect x="4" y="10" width="44" height="32" rx="3" stroke="currentColor" stroke-width="1.5" fill="none"/>
-              <path d="M4 18H48" stroke="currentColor" stroke-width="1.5"/>
-              <circle cx="11" cy="14" r="1.5" fill="currentColor"/>
-              <circle cx="17" cy="14" r="1.5" fill="currentColor"/>
-              <circle cx="23" cy="14" r="1.5" fill="currentColor"/>
-              <path d="M16 30l5 5 11-11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <rect x="10" y="24" width="10" height="10" rx="1" stroke="currentColor" stroke-width="1" opacity="0.3"/>
-              <path d="M28 27h10M28 31h7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
-            </svg>
-          </div>
-          <div class="svc-card-badge-wrap">
-            <span class="svc-card-badge svc-card-badge--conversion">CONVERTS</span>
-          </div>
-        </div>
-
-        <div class="svc-card-body">
-          <span class="svc-card-tag-label">// 02</span>
-          <h3 class="svc-card-title" id="svc-web-title">Website Design &amp; Development</h3>
-          <p class="svc-card-tagline">"A website that makes people stay instead of bounce."</p>
-          <p class="svc-card-desc">
-            Your website is your hardest-working salesperson. It's open 24/7, making first impressions on every single potential client before they ever talk to you. We build websites that load fast, look stunning, and are engineered from the ground up to convert visitors into leads, and leads into clients.
-          </p>
-          <p class="svc-card-desc">
-            No templates. No Wix. No "here's your WordPress site, have fun with the plugins." Custom design. Production-grade code. SEO-optimized from day one. Built to grow with you.
-          </p>
-
-          <div class="svc-card-cols">
-            <div>
-              <h4 class="svc-card-col-heading">What You Get</h4>
-              <ul class="svc-card-list" aria-label="Web Design deliverables">
-                <li>Custom UI/UX design (Figma → dev)</li>
-                <li>Mobile-first, fully responsive build</li>
-                <li>On-page SEO &amp; Core Web Vitals optimization</li>
-                <li>Contact forms &amp; lead capture flows</li>
-                <li>CMS integration (if needed)</li>
-                <li>Analytics setup (GA4 + event tracking)</li>
-                <li>30-day post-launch support</li>
-                <li>Full handoff with documentation</li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="svc-card-col-heading">Technologies</h4>
-              <ul class="svc-card-list" aria-label="Web technologies used">
-                <li>HTML5 / CSS3 / Vanilla JS (static sites)</li>
-                <li>React / Next.js (dynamic apps)</li>
-                <li>Webflow (no-code with custom code)</li>
-                <li>Shopify (e-commerce)</li>
-                <li>WordPress (content-heavy sites)</li>
-              </ul>
-              <div class="svc-card-result-block" style="margin-top: 20px;">
-                <span class="svc-result-num">62%</span>
-                <span class="svc-result-label">avg. bounce rate reduction after our redesigns</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="svc-card-footer">
-            <a href="/contact/" class="btn btn-primary">Start a Web Project →</a>
-            <a href="/portfolio/" class="btn btn-ghost">See Web Work ↗</a>
-          </div>
-        </div>
-
-      </div>
-    </article>
-
-    <!-- ─── SERVICE 03 — SOCIAL MEDIA ─── -->
-    <article class="svc-card svc-card--featured" id="social-media" aria-labelledby="svc-social-title">
-      <div class="svc-card-featured-ribbon" aria-label="Most popular service">MOST POPULAR</div>
-      <div class="svc-card-inner">
-
-        <div class="svc-card-left">
-          <div class="svc-card-num" aria-hidden="true">03</div>
-          <div class="svc-card-icon" aria-hidden="true">
-            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
-              <circle cx="26" cy="26" r="20" stroke="currentColor" stroke-width="1.5" fill="none"/>
-              <path d="M26 10C20 17 17 21 17 26s3 11 9 16M26 10c6 7 9 11 9 16s-3 11-9 16" stroke="currentColor" stroke-width="1" opacity="0.25"/>
-              <path d="M6 26h40" stroke="currentColor" stroke-width="1" opacity="0.25"/>
-              <path d="M19 21l6 5-6 5M33 21l-6 5 6 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <div class="svc-card-badge-wrap">
-            <span class="svc-card-badge svc-card-badge--viral">VIRAL OR BUST</span>
-          </div>
-        </div>
-
-        <div class="svc-card-body">
-          <span class="svc-card-tag-label">// 03</span>
-          <h3 class="svc-card-title" id="svc-social-title">Social Media Management</h3>
-          <p class="svc-card-tagline">"Viral or Bust. We don't do mediocre."</p>
-          <p class="svc-card-desc">
-            Social media isn't a place to post — it's a place to build a brand that people actually care about. We manage your full social presence: strategy, content creation, scheduling, community management, and growth. Every post has a purpose. Every caption earns its place. Every piece of content is engineered to stop the scroll.
-          </p>
-          <p class="svc-card-desc">
-            We don't just "post three times a week and call it done." We study your audience, test creative, double down on what works, and cut what doesn't. The result: an account that grows, an audience that converts, and a feed that makes your competitors uncomfortable.
-          </p>
-
-          <div class="svc-card-cols">
-            <div>
-              <h4 class="svc-card-col-heading">What You Get</h4>
-              <ul class="svc-card-list" aria-label="Social Media Management deliverables">
-                <li>Monthly content strategy &amp; calendar</li>
-                <li>Original graphics, photos &amp; video content</li>
-                <li>Caption copy (on-brand, every post)</li>
-                <li>Scheduled posting &amp; platform management</li>
-                <li>Community management &amp; DM handling</li>
-                <li>Hashtag &amp; SEO strategy</li>
-                <li>Monthly analytics report with insights</li>
-                <li>Quarterly strategy review &amp; pivots</li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="svc-card-col-heading">Platforms We Cover</h4>
-              <ul class="svc-card-list" aria-label="Social media platforms">
-                <li>Instagram &amp; Instagram Reels</li>
-                <li>TikTok</li>
-                <li>LinkedIn (personal + company)</li>
-                <li>Facebook &amp; Facebook Groups</li>
-                <li>X / Twitter</li>
-                <li>YouTube Shorts</li>
-              </ul>
-              <div class="svc-card-result-block" style="margin-top: 20px;">
-                <span class="svc-result-num">347%</span>
-                <span class="svc-result-label">avg. engagement lift within 90 days</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="svc-card-footer">
-            <a href="/contact/" class="btn btn-primary">Start Social Management →</a>
-            <a href="/portfolio/" class="btn btn-ghost">See Social Work ↗</a>
-          </div>
-        </div>
-
-      </div>
-    </article>
-
-    <!-- ─── SERVICE 04 — VIDEO PRODUCTION ─── -->
-    <article class="svc-card" id="video" aria-labelledby="svc-video-title">
-      <div class="svc-card-inner svc-card-inner--alt">
-
-        <div class="svc-card-left">
-          <div class="svc-card-num" aria-hidden="true">04</div>
-          <div class="svc-card-icon" aria-hidden="true">
-            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
-              <rect x="4" y="14" width="30" height="24" rx="3" stroke="currentColor" stroke-width="1.5" fill="none"/>
-              <path d="M34 20l14-7v26l-14-7V20z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
-              <circle cx="14" cy="7" r="2" fill="currentColor" opacity="0.4"/>
-              <circle cx="22" cy="7" r="2" fill="currentColor" opacity="0.4"/>
-              <path d="M14 9v5M22 9v5" stroke="currentColor" stroke-width="1" opacity="0.4"/>
-              <path d="M14 26l5-3 5 3-5 3-5-3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
-            </svg>
-          </div>
-          <div class="svc-card-badge-wrap">
-            <span class="svc-card-badge svc-card-badge--cinematic">CINEMATIC</span>
-          </div>
-        </div>
-
-        <div class="svc-card-body">
-          <span class="svc-card-tag-label">// 04</span>
-          <h3 class="svc-card-title" id="svc-video-title">Video Production</h3>
-          <p class="svc-card-tagline">"Cinematic Ego — content that makes you look like a Fortune 500."</p>
-          <p class="svc-card-desc">
-            Video is the highest-leverage creative asset you can invest in. One great brand film can define how your audience feels about you for years. One great ad can generate revenue for months. We shoot and edit video at a cinematic level — the kind of work that makes viewers stop, watch all the way through, and immediately want what you're selling.
-          </p>
-          <p class="svc-card-desc">
-            From brand films and hero content to quick-turn social reels and paid ad creative, we cover every format and deliver every file type your team needs to deploy content everywhere.
-          </p>
-
-          <div class="svc-card-cols">
-            <div>
-              <h4 class="svc-card-col-heading">What You Get</h4>
-              <ul class="svc-card-list" aria-label="Video Production deliverables">
-                <li>Pre-production: concept, script &amp; shot list</li>
-                <li>Professional on-location or studio shoot</li>
-                <li>Professional editing &amp; color grading</li>
-                <li>Custom sound design &amp; licensed music</li>
-                <li>Motion graphics &amp; titles</li>
-                <li>Multi-format exports (16:9, 9:16, 1:1)</li>
-                <li>Subtitles &amp; captions</li>
-                <li>Raw footage archive on handoff</li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="svc-card-col-heading">Content Types</h4>
-              <ul class="svc-card-list" aria-label="Video content types">
-                <li>Brand films &amp; company stories</li>
-                <li>Product showcases &amp; demos</li>
-                <li>Testimonial &amp; case study videos</li>
-                <li>Paid ad creative (Meta, TikTok, YouTube)</li>
-                <li>Event coverage &amp; recap reels</li>
-                <li>Short-form social content (Reels, TikTok)</li>
-              </ul>
-              <div class="svc-card-result-block" style="margin-top: 20px;">
-                <span class="svc-result-num">$180K</span>
-                <span class="svc-result-label">in attributed revenue from a single brand film</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="svc-card-footer">
-            <a href="/contact/" class="btn btn-primary">Start a Video Project →</a>
-            <a href="/portfolio/" class="btn btn-ghost">See Video Work ↗</a>
-          </div>
-        </div>
-
-      </div>
-    </article>
-
-    <!-- ─── SERVICE 05 — PAID ADS ─── -->
-    <article class="svc-card" id="paid-ads" aria-labelledby="svc-ads-title">
-      <div class="svc-card-inner">
-
-        <div class="svc-card-left">
-          <div class="svc-card-num" aria-hidden="true">05</div>
-          <div class="svc-card-icon" aria-hidden="true">
-            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
-              <path d="M6 40L18 24l10 11 8-9 10 14H6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
-              <path d="M6 40L18 24l10 11 8-9 10 14" stroke="currentColor" stroke-width="1" opacity="0.15" stroke-linejoin="round"/>
-              <circle cx="40" cy="12" r="7" stroke="currentColor" stroke-width="1.5" fill="none"/>
-              <path d="M37 12h6M40 9v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              <path d="M8 46h36" stroke="currentColor" stroke-width="1" opacity="0.3" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <div class="svc-card-badge-wrap">
-            <span class="svc-card-badge svc-card-badge--roi">PRINTS ROI</span>
-          </div>
-        </div>
-
-        <div class="svc-card-body">
-          <span class="svc-card-tag-label">// 05</span>
-          <h3 class="svc-card-title" id="svc-ads-title">Paid Ads Management</h3>
-          <p class="svc-card-tagline">"We spend your money like it's ours. Carefully."</p>
-          <p class="svc-card-desc">
-            Most agencies run your ads. We engineer your ads. There's a difference: one approach burns budget on hunches; the other builds data-driven campaigns with clear entry and exit criteria, obsessive A/B testing, and a reporting cadence that tells you exactly what your money is doing at all times.
-          </p>
-          <p class="svc-card-desc">
-            We manage full-funnel paid campaigns — from cold audience acquisition at the top of funnel to retargeting and conversion campaigns at the bottom. Every dollar has a job. We make sure it does it.
-          </p>
-
-          <div class="svc-card-cols">
-            <div>
-              <h4 class="svc-card-col-heading">What You Get</h4>
-              <ul class="svc-card-list" aria-label="Paid Ads Management deliverables">
-                <li>Full campaign strategy &amp; funnel architecture</li>
-                <li>Ad creative production (static, video, carousel)</li>
-                <li>Audience research &amp; targeting setup</li>
-                <li>Campaign build &amp; launch</li>
-                <li>Ongoing A/B testing &amp; creative refresh</li>
-                <li>Weekly performance reports</li>
-                <li>Monthly strategy call &amp; budget review</li>
-                <li>Pixel setup &amp; conversion tracking</li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="svc-card-col-heading">Platforms We Run</h4>
-              <ul class="svc-card-list" aria-label="Ad platforms">
-                <li>Meta Ads (Facebook &amp; Instagram)</li>
-                <li>Google Ads (Search, Display, YouTube)</li>
-                <li>TikTok Ads</li>
-                <li>LinkedIn Ads (B2B focus)</li>
-                <li>Pinterest Ads</li>
-                <li>Programmatic / display networks</li>
-              </ul>
-              <div class="svc-card-result-block" style="margin-top: 20px;">
-                <span class="svc-result-num">4.2×</span>
-                <span class="svc-result-label">avg. ROAS across active client campaigns</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="svc-card-footer">
-            <a href="/contact/" class="btn btn-primary">Start an Ads Campaign →</a>
-            <a href="/results/" class="btn btn-ghost">See Ad Results ↗</a>
-          </div>
-        </div>
-
-      </div>
-    </article>
-
-    <!-- ─── SERVICE 06 — SEO ─── -->
-    <article class="svc-card" id="seo" aria-labelledby="svc-seo-title">
+    <!-- ─── SERVICE 06 — APP STORE OPTIMIZATION ─── -->
+    <article class="svc-card" id="aso" aria-labelledby="svc-aso-title">
       <div class="svc-card-inner svc-card-inner--alt">
 
         <div class="svc-card-left">
           <div class="svc-card-num" aria-hidden="true">06</div>
           <div class="svc-card-icon" aria-hidden="true">
             <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
-              <circle cx="22" cy="22" r="15" stroke="currentColor" stroke-width="1.5" fill="none"/>
-              <path d="M33 33l13 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              <path d="M15 22h14M22 15v14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              <circle cx="22" cy="22" r="8" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 4" opacity="0.3"/>
+              <rect x="12" y="4" width="28" height="44" rx="4" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M20 14h12M20 22h12M20 30h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="26" cy="40" r="2" fill="currentColor" opacity="0.5"/>
+              <path d="M34 10l4-4 4 4M38 6v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
             </svg>
           </div>
           <div class="svc-card-badge-wrap">
-            <span class="svc-card-badge svc-card-badge--compound">COMPOUNDS</span>
+            <span class="svc-card-badge svc-card-badge--compound">ORGANIC LIFT</span>
           </div>
         </div>
 
         <div class="svc-card-body">
           <span class="svc-card-tag-label">// 06</span>
-          <h3 class="svc-card-title" id="svc-seo-title">SEO &amp; Content Strategy</h3>
-          <p class="svc-card-tagline">"Google doesn't know you exist. We fix that."</p>
+          <h3 class="svc-card-title" id="svc-aso-title">App Store Optimization</h3>
+          <p class="svc-card-tagline">"You can't acquire users from a listing nobody sees."</p>
           <p class="svc-card-desc">
-            Paid ads stop working the moment you stop paying. SEO compounds. Every article we write, every technical fix we implement, every link we build is an asset that continues generating traffic and leads months — sometimes years — after we create it. SEO is the most patient, highest-ROI channel in marketing. Most brands ignore it. That's your opening.
+            Your app could be the best in its category — but if your store listing isn't optimized, you're invisible to the users actively searching for what you built. ASO is the highest-ROI, lowest-cost acquisition channel available to any app business, and most teams treat it as an afterthought.
           </p>
           <p class="svc-card-desc">
-            We handle the full spectrum: technical SEO audits, on-page optimization, keyword strategy, content creation, and off-page authority building. Everything works together as a system, not a collection of tactics.
+            We audit and optimize every element of your App Store and Google Play listing — keyword strategy, metadata, screenshots, preview videos, ratings management, and A/B testing. The result: more organic installs, better conversion rates, and lower effective CPI on every paid campaign running alongside it.
           </p>
 
           <div class="svc-card-cols">
             <div>
               <h4 class="svc-card-col-heading">What You Get</h4>
-              <ul class="svc-card-list" aria-label="SEO deliverables">
-                <li>Full technical SEO audit &amp; fix list</li>
-                <li>Keyword research &amp; opportunity mapping</li>
-                <li>Competitor SEO gap analysis</li>
-                <li>On-page optimization (all target pages)</li>
-                <li>Monthly long-form content (articles, guides)</li>
-                <li>Internal linking strategy</li>
-                <li>Link building &amp; authority development</li>
-                <li>Monthly rank tracking &amp; traffic report</li>
+              <ul class="svc-card-list" aria-label="App Store Optimization deliverables">
+                <li>Full ASO audit (App Store &amp; Google Play)</li>
+                <li>Keyword research &amp; metadata optimization</li>
+                <li>Title, subtitle &amp; description rewrite</li>
+                <li>Screenshot &amp; preview video strategy</li>
+                <li>Icon &amp; creative asset recommendations</li>
+                <li>Ratings &amp; review management strategy</li>
+                <li>A/B testing (Apple Product Page Optimization)</li>
+                <li>Monthly keyword rank tracking &amp; reporting</li>
               </ul>
             </div>
             <div>
-              <h4 class="svc-card-col-heading">What We Optimize For</h4>
-              <ul class="svc-card-list" aria-label="SEO focus areas">
-                <li>Organic search rankings (Google + Bing)</li>
-                <li>Core Web Vitals &amp; page speed</li>
-                <li>Local SEO (Google Business Profile)</li>
-                <li>E-E-A-T signals &amp; domain authority</li>
-                <li>Featured snippets &amp; rich results</li>
-                <li>Long-tail conversion keywords</li>
+              <h4 class="svc-card-col-heading">Who It's For</h4>
+              <ul class="svc-card-list" aria-label="Who ASO is for">
+                <li>Apps with paid UA but weak organic conversion</li>
+                <li>New launches preparing for store visibility</li>
+                <li>Apps losing ground to competitors in search</li>
+                <li>Teams whose listing hasn't been updated in months</li>
+                <li>Any app where organic installs are underperforming</li>
               </ul>
               <div class="svc-card-result-block" style="margin-top: 20px;">
-                <span class="svc-result-num">218%</span>
-                <span class="svc-result-label">avg. organic traffic increase at 6 months</span>
+                <span class="svc-result-num">ASO</span>
+                <span class="svc-result-label">identified as a top growth lever for Cybersecurity &amp; Fitness App clients</span>
               </div>
             </div>
           </div>
 
           <div class="svc-card-footer">
-            <a href="/contact/" class="btn btn-primary">Start an SEO Project →</a>
-            <a href="/results/" class="btn btn-ghost">See SEO Results ↗</a>
-          </div>
-        </div>
-
-      </div>
-    </article>
-
-    <!-- ─── SERVICE 07 — PHOTOGRAPHY ─── -->
-    <article class="svc-card" id="photography" aria-labelledby="svc-photo-title">
-      <div class="svc-card-inner">
-
-        <div class="svc-card-left">
-          <div class="svc-card-num" aria-hidden="true">07</div>
-          <div class="svc-card-icon" aria-hidden="true">
-            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
-              <rect x="4" y="16" width="44" height="30" rx="3" stroke="currentColor" stroke-width="1.5" fill="none"/>
-              <path d="M16 16v-4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v4" stroke="currentColor" stroke-width="1.5"/>
-              <circle cx="26" cy="31" r="8" stroke="currentColor" stroke-width="1.5" fill="none"/>
-              <circle cx="26" cy="31" r="4" stroke="currentColor" stroke-width="1" stroke-dasharray="2 3" opacity="0.4"/>
-              <circle cx="26" cy="31" r="1.5" fill="currentColor"/>
-              <circle cx="40" cy="22" r="2" fill="currentColor" opacity="0.5"/>
-            </svg>
-          </div>
-          <div class="svc-card-badge-wrap">
-            <span class="svc-card-badge svc-card-badge--authentic">AUTHENTIC</span>
-          </div>
-        </div>
-
-        <div class="svc-card-body">
-          <span class="svc-card-tag-label">// 07</span>
-          <h3 class="svc-card-title" id="svc-photo-title">Photography</h3>
-          <p class="svc-card-tagline">"Stop using stock photos of white people shaking hands."</p>
-          <p class="svc-card-desc">
-            Stock photography is the visual equivalent of a fake laugh — everyone can tell. Your brand deserves images that are actually yours: your space, your people, your product, shot in a way that makes viewers feel something. We produce brand photography that's cinematic in quality and strategic in intent — every frame is designed to work across your website, social, ads, and press.
-          </p>
-          <p class="svc-card-desc">
-            Whether you need a full brand shoot, product catalog photography, headshots that don't look like LinkedIn prison photos, or event coverage that captures the energy of the room — we've got it handled.
-          </p>
-
-          <div class="svc-card-cols">
-            <div>
-              <h4 class="svc-card-col-heading">What You Get</h4>
-              <ul class="svc-card-list" aria-label="Photography deliverables">
-                <li>Pre-shoot creative brief &amp; shot list</li>
-                <li>Professional on-location or studio shoot</li>
-                <li>Professional retouching &amp; color grading</li>
-                <li>Web-optimized &amp; print-ready exports</li>
-                <li>Full licensing for commercial use</li>
-                <li>Digital delivery within 5 business days</li>
-                <li>Raw files available on request</li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="svc-card-col-heading">Shoot Types</h4>
-              <ul class="svc-card-list" aria-label="Photography types">
-                <li>Brand &amp; lifestyle photography</li>
-                <li>Product &amp; e-commerce photography</li>
-                <li>Team &amp; leadership headshots</li>
-                <li>Architecture &amp; interior photography</li>
-                <li>Event &amp; conference coverage</li>
-                <li>Food &amp; hospitality photography</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="svc-card-footer">
-            <a href="/contact/" class="btn btn-primary">Book a Shoot →</a>
-            <a href="/portfolio/" class="btn btn-ghost">See Photo Work ↗</a>
-          </div>
-        </div>
-
-      </div>
-    </article>
-
-    <!-- ─── SERVICE 08 — BRAND STRATEGY ─── -->
-    <article class="svc-card svc-card--brain" id="brand-strategy" aria-labelledby="svc-strategy-title">
-      <div class="svc-card-inner svc-card-inner--alt">
-
-        <div class="svc-card-left">
-          <div class="svc-card-num" aria-hidden="true">08</div>
-          <div class="svc-card-icon" aria-hidden="true">
-            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
-              <path d="M26 8C17.163 8 10 15.163 10 24c0 5.5 2.7 10.4 6.8 13.5V42h18.4v-4.5C39.3 34.4 42 29.5 42 24 42 15.163 34.837 8 26 8z" stroke="currentColor" stroke-width="1.5" fill="none"/>
-              <path d="M16.8 37.5h18.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              <path d="M19 42h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              <path d="M20 24c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-              <path d="M26 18v-4M20 22l-3-3M32 22l3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
-              <circle cx="26" cy="27" r="3" fill="currentColor" opacity="0.7"/>
-            </svg>
-          </div>
-          <div class="svc-card-badge-wrap">
-            <span class="svc-card-badge svc-card-badge--brain">THE BRAIN</span>
-          </div>
-        </div>
-
-        <div class="svc-card-body">
-          <span class="svc-card-tag-label">// 08</span>
-          <h3 class="svc-card-title" id="svc-strategy-title">Brand Strategy &amp; Consulting</h3>
-          <p class="svc-card-tagline">"The Brain Package — for when you need the full game plan."</p>
-          <p class="svc-card-desc">
-            Sometimes you don't need execution. You need to think clearly before you execute. Brand strategy is the work that happens before we touch a single logo, write a single ad, or post a single piece of content — it's the architecture that makes everything else work harder.
-          </p>
-          <p class="svc-card-desc">
-            We work with founders, CMOs, and leadership teams to define positioning, articulate what makes you genuinely different, identify the audiences worth pursuing, and build a strategic framework that the entire organization can align around. This is the work that separates brands that drift from brands that dominate.
-          </p>
-
-          <div class="svc-card-cols">
-            <div>
-              <h4 class="svc-card-col-heading">What You Get</h4>
-              <ul class="svc-card-list" aria-label="Brand Strategy deliverables">
-                <li>Brand positioning statement</li>
-                <li>Target audience personas (&amp; anti-personas)</li>
-                <li>Competitive landscape mapping</li>
-                <li>Brand architecture (if multi-brand)</li>
-                <li>Messaging hierarchy &amp; core narratives</li>
-                <li>Go-to-market strategy framework</li>
-                <li>Channel prioritization &amp; budget allocation</li>
-                <li>12-month brand roadmap</li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="svc-card-col-heading">Who This Is For</h4>
-              <ul class="svc-card-list" aria-label="Who brand strategy is for">
-                <li>Pre-launch founders (before you build the wrong brand)</li>
-                <li>Post-fundraise teams scaling into new markets</li>
-                <li>Established brands feeling stagnant</li>
-                <li>Companies navigating a rebrand</li>
-                <li>CMOs who need an outside perspective</li>
-              </ul>
-              <div class="svc-card-result-block" style="margin-top: 20px;">
-                <span class="svc-result-num">1 doc.</span>
-                <span class="svc-result-label">that your entire team can build from for 12 months</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="svc-card-footer">
-            <a href="/contact/" class="btn btn-primary">Get the Brain Package →</a>
-            <a href="/about/" class="btn btn-ghost">How We Think ↗</a>
+            <a href="/contact/" class="btn btn-primary">Start an ASO Project →</a>
+            <a href="/results/" class="btn btn-ghost">See Growth Results ↗</a>
           </div>
         </div>
 
@@ -832,8 +664,8 @@
 
     <div class="section-header" data-animate="fadeUp">
       <span class="section-tag">// HOW A PROJECT UNFOLDS</span>
-      <h2 class="section-headline" id="lifecycle-headline">DISCOVERY TO<br>DOMINATION</h2>
-      <p class="section-sub">Every engagement runs through the same five-phase machine.</p>
+      <h2 class="section-headline" id="lifecycle-headline">AUDIT TO<br>SCALE</h2>
+      <p class="section-sub">Every engagement runs through the same five-phase system.</p>
     </div>
 
     <div class="lifecycle-track" aria-label="Project phases">
@@ -846,11 +678,10 @@
             <path d="M14 2v4M14 22v4M2 14h4M22 14h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
           </svg>
         </div>
-        <div class="lifecycle-step-connector" aria-hidden="true"></div>
         <div class="lifecycle-step-content">
-          <h3 class="lifecycle-step-title">Discovery</h3>
+          <h3 class="lifecycle-step-title">Audit</h3>
           <p class="lifecycle-step-duration">Week 1</p>
-          <p class="lifecycle-step-desc">Deep-dive into your brand, market, competitors, and goals. No assumptions.</p>
+          <p class="lifecycle-step-desc">Deep-dive into your current performance, channels, spend, and growth gaps. No assumptions.</p>
         </div>
       </div>
 
@@ -861,11 +692,10 @@
             <path d="M7 8h14M7 14h10M7 20h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
           </svg>
         </div>
-        <div class="lifecycle-step-connector" aria-hidden="true"></div>
         <div class="lifecycle-step-content">
           <h3 class="lifecycle-step-title">Strategy</h3>
           <p class="lifecycle-step-duration">Week 2</p>
-          <p class="lifecycle-step-desc">Custom roadmap with defined deliverables, timelines, and KPIs you approve.</p>
+          <p class="lifecycle-step-desc">Custom roadmap with channel priorities, budget allocation, KPIs, and a scaling timeline you approve.</p>
         </div>
       </div>
 
@@ -876,11 +706,10 @@
             <circle cx="22" cy="6" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/>
           </svg>
         </div>
-        <div class="lifecycle-step-connector" aria-hidden="true"></div>
         <div class="lifecycle-step-content">
           <h3 class="lifecycle-step-title">Execution</h3>
           <p class="lifecycle-step-duration">Weeks 3–5</p>
-          <p class="lifecycle-step-desc">We build. Revision rounds included. You stay in the loop at every milestone.</p>
+          <p class="lifecycle-step-desc">We build, launch, and manage. Creative produced in-house. Campaigns live and optimized daily.</p>
         </div>
       </div>
 
@@ -891,11 +720,10 @@
             <path d="M4 22h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
           </svg>
         </div>
-        <div class="lifecycle-step-connector" aria-hidden="true"></div>
         <div class="lifecycle-step-content">
-          <h3 class="lifecycle-step-title">Launch</h3>
-          <p class="lifecycle-step-duration">Week 6</p>
-          <p class="lifecycle-step-desc">Coordinated go-live across all channels. We make it land hard, not soft.</p>
+          <h3 class="lifecycle-step-title">Optimize</h3>
+          <p class="lifecycle-step-duration">Weeks 4–6</p>
+          <p class="lifecycle-step-desc">Data starts talking. We cut what underperforms, double down on what works, and reallocate fast.</p>
         </div>
       </div>
 
@@ -909,7 +737,7 @@
         <div class="lifecycle-step-content">
           <h3 class="lifecycle-step-title">Scale</h3>
           <p class="lifecycle-step-duration">Ongoing</p>
-          <p class="lifecycle-step-desc">Track, report, optimize, repeat. Growth is a direction, not a finish line.</p>
+          <p class="lifecycle-step-desc">Proven channels get more budget. New ones get tested. Growth compounds. You get the receipts.</p>
         </div>
       </div>
 
@@ -928,7 +756,7 @@
     <div class="section-header" data-animate="fadeUp">
       <span class="section-tag">// INVESTMENT LEVELS</span>
       <h2 class="section-headline" id="pricing-headline">PICK YOUR<br>PACKAGE</h2>
-      <p class="section-sub">Every package is a starting point. Your project gets a custom scope — these just give you a sense of the range.</p>
+      <p class="section-sub">Every package is a starting point. Your project gets a custom scope — these give you a sense of the range.</p>
     </div>
 
     <div class="pricing-grid" data-stagger>
@@ -941,7 +769,7 @@
             <span class="pricing-from">From</span>
             <span class="pricing-amount">$2,500</span>
           </div>
-          <p class="pricing-desc">One focused weapon. One focused outcome. Perfect for early-stage brands that need a strong foundation fast.</p>
+          <p class="pricing-desc">One focused discipline. One focused outcome. For brands that need a strong foundation or a single high-impact push.</p>
         </div>
         <ul class="pricing-features" aria-label="Starter package features">
           <li><span class="pricing-check" aria-hidden="true">✓</span> One core service</li>
@@ -964,7 +792,7 @@
             <span class="pricing-from">From</span>
             <span class="pricing-amount pricing-amount--featured">$6,500</span>
           </div>
-          <p class="pricing-desc">Two or three integrated services working together. This is where the compounding starts.</p>
+          <p class="pricing-desc">Two or three integrated disciplines working together. This is where compounding starts and results get real.</p>
         </div>
         <ul class="pricing-features" aria-label="Growth package features">
           <li><span class="pricing-check" aria-hidden="true">✓</span> 2–3 integrated services</li>
@@ -978,32 +806,32 @@
         <a href="/contact/" class="btn btn-primary pricing-cta">Apply For This →</a>
       </div>
 
-      <!-- Domination -->
-      <div class="pricing-card pricing-card--domination" data-animate="fadeUp" data-animate-delay="160" role="article" aria-label="Domination package">
+      <!-- Scale -->
+      <div class="pricing-card pricing-card--domination" data-animate="fadeUp" data-animate-delay="160" role="article" aria-label="Scale package">
         <div class="pricing-card-header">
-          <span class="pricing-tier-tag pricing-tier-tag--gold">DOMINATION</span>
+          <span class="pricing-tier-tag pricing-tier-tag--gold">SCALE</span>
           <div class="pricing-price">
             <span class="pricing-from">From</span>
             <span class="pricing-amount pricing-amount--gold">$15,000</span>
           </div>
-          <p class="pricing-desc">The full arsenal. End-to-end brand build and management. For brands that are done playing small.</p>
+          <p class="pricing-desc">The full system. End-to-end strategy and execution across every channel. For brands done playing small.</p>
         </div>
-        <ul class="pricing-features" aria-label="Domination package features">
-          <li><span class="pricing-check pricing-check--gold" aria-hidden="true">✓</span> Full brand system build</li>
-          <li><span class="pricing-check pricing-check--gold" aria-hidden="true">✓</span> Web design &amp; development</li>
+        <ul class="pricing-features" aria-label="Scale package features">
+          <li><span class="pricing-check pricing-check--gold" aria-hidden="true">✓</span> Full growth strategy build</li>
+          <li><span class="pricing-check pricing-check--gold" aria-hidden="true">✓</span> Performance marketing management</li>
+          <li><span class="pricing-check pricing-check--gold" aria-hidden="true">✓</span> User acquisition system</li>
           <li><span class="pricing-check pricing-check--gold" aria-hidden="true">✓</span> Social media management</li>
-          <li><span class="pricing-check pricing-check--gold" aria-hidden="true">✓</span> Video production included</li>
-          <li><span class="pricing-check pricing-check--gold" aria-hidden="true">✓</span> Paid ads management</li>
-          <li><span class="pricing-check pricing-check--gold" aria-hidden="true">✓</span> SEO &amp; content strategy</li>
+          <li><span class="pricing-check pricing-check--gold" aria-hidden="true">✓</span> Creative &amp; brand production</li>
+          <li><span class="pricing-check pricing-check--gold" aria-hidden="true">✓</span> Analytics &amp; reporting setup</li>
           <li><span class="pricing-check pricing-check--gold" aria-hidden="true">✓</span> Dedicated team + weekly calls</li>
         </ul>
-        <a href="/contact/" class="btn btn-outline pricing-cta pricing-cta--gold">Let's Dominate →</a>
+        <a href="/contact/" class="btn btn-outline pricing-cta pricing-cta--gold">Let's Scale →</a>
       </div>
 
     </div><!-- /pricing-grid -->
 
     <p class="pricing-disclaimer" data-animate="fadeUp">
-      All projects start with a free consultation and a custom scope. Prices listed are starting points — your final investment depends on project complexity, timeline, and scope.
+      All projects start with a free consultation and a custom scope. Prices listed are starting points — your final investment depends on complexity, timeline, and scope.
       <a href="/contact/" style="color:var(--color-emerald)"> Talk to us about yours →</a>
     </p>
 
@@ -1018,13 +846,13 @@
   <div class="cta-banner-bg" aria-hidden="true"></div>
   <div class="container">
     <div class="cta-banner-inner" data-animate="fadeUp">
-      <span class="section-tag cta-tag">// TELL US WHAT YOU NEED</span>
+      <span class="section-tag cta-tag">// TELL US WHERE YOU WANT TO GO</span>
       <h2 class="cta-headline" id="svc-cta-headline">
         FREE CONSULT.<br>
         <em style="font-style:italic; color:var(--color-muted)">You're Welcome.</em>
       </h2>
       <p class="cta-sub">
-        Not sure which service you need? Tell us where you are<br>and where you want to be. We'll figure out the rest.
+        Not sure which service you need? Tell us where you are<br>and where you want to be. We'll map the route.
       </p>
       <div class="cta-banner-actions">
         <a href="/contact/" class="btn btn-primary btn-xl">Apply For Greatness →</a>
@@ -1046,29 +874,19 @@
 <footer class="footer" role="contentinfo">
   <div class="container">
     <div class="footer-top">
-
       <div class="footer-brand">
         <a href="/" class="footer-logo" aria-label="2Bros Media homepage">
-          <div class="nav-logo-mark" aria-hidden="true">2BM</div>
+          <div class="nav-logo-mark" aria-hidden="true">2B</div>
           <span class="nav-logo-text">2BROS <span>MEDIA</span></span>
         </a>
         <p class="footer-tagline">Your brand, but actually good.</p>
         <div class="footer-socials" aria-label="Social media links">
-          <a href="https://instagram.com/2brosmedia" class="footer-social" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
-          </a>
-          <a href="https://linkedin.com/company/2brosmedia" class="footer-social" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M7 10v7M7 7v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M11 17v-4c0-1.5 1-2 2-2s2 .5 2 2v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M11 10v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </a>
-          <a href="https://tiktok.com/@2brosmedia" class="footer-social" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-          <a href="https://twitter.com/2brosmedia" class="footer-social" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4l16 16M4 20L20 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </a>
+          <a href="https://instagram.com/2brosmedia" class="footer-social" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="https://linkedin.com/company/2brosmedia" class="footer-social" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M7 10v7M7 7v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M11 17v-4c0-1.5 1-2 2-2s2 .5 2 2v4M11 10v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+          <a href="https://tiktok.com/@2brosmedia" class="footer-social" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="https://twitter.com/2brosmedia" class="footer-social" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4l16 16M4 20L20 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
         </div>
       </div>
-
       <nav class="footer-nav" aria-label="Footer navigation">
         <div class="footer-nav-col">
           <h4 class="footer-nav-heading">Pages</h4>
@@ -1085,24 +903,20 @@
         <div class="footer-nav-col">
           <h4 class="footer-nav-heading">Services</h4>
           <ul role="list">
-            <li><a href="#brand-identity">Brand Identity</a></li>
-            <li><a href="#web-design">Web Design</a></li>
-            <li><a href="#social-media">Social Media</a></li>
-            <li><a href="#video">Video Production</a></li>
-            <li><a href="#paid-ads">Paid Ads</a></li>
-            <li><a href="#seo">SEO &amp; Content</a></li>
-            <li><a href="#photography">Photography</a></li>
-            <li><a href="#brand-strategy">Brand Strategy</a></li>
+            <li><a href="/services/#performance-marketing">Performance Marketing</a></li>
+            <li><a href="/services/#user-acquisition">User Acquisition</a></li>
+            <li><a href="/services/#growth-strategy">Growth Strategy</a></li>
+            <li><a href="/services/#social-media">Social Media</a></li>
+            <li><a href="/services/#brand-identity">Brand Identity</a></li>
+            <li><a href="/services/#aso">App Store Optimization</a></li>
           </ul>
         </div>
       </nav>
-
       <div class="footer-cta-col">
         <h4 class="footer-nav-heading">Get Started</h4>
-        <p class="footer-cta-text">Stop suffering. Free consultation. We'll show you exactly what your brand is missing.</p>
+        <p class="footer-cta-text">Stop suffering. Free consultation. We'll show you exactly what your growth is missing.</p>
         <a href="/contact/" class="btn btn-primary" style="margin-top:16px">Apply For Greatness →</a>
       </div>
-
     </div>
     <div class="footer-bottom">
       <p class="footer-copy">© 2026 2Bros Media. All rights reserved. <span class="footer-built">Built different.</span></p>
@@ -1145,8 +959,8 @@
     const hamburger  = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobile-menu');
     const closeBtn   = document.getElementById('mobile-close');
-    const open  = () => { mobileMenu.classList.add('open');    hamburger.setAttribute('aria-expanded','true');  document.body.style.overflow = 'hidden'; };
-    const close = () => { mobileMenu.classList.remove('open'); hamburger.setAttribute('aria-expanded','false'); document.body.style.overflow = ''; };
+    const open  = () => { mobileMenu.classList.add('open');    hamburger.setAttribute('aria-expanded','true');  document.body.style.overflow='hidden'; };
+    const close = () => { mobileMenu.classList.remove('open'); hamburger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; };
     hamburger?.addEventListener('click', open);
     closeBtn?.addEventListener('click', close);
     mobileMenu?.addEventListener('click', e => { if (e.target === mobileMenu) close(); });
@@ -1158,15 +972,12 @@
     const io = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (!entry.isIntersecting) return;
-        const el    = entry.target;
-        const delay = parseInt(el.dataset.animateDelay || 0);
-        setTimeout(() => el.classList.add('in-view'), delay);
+        const el = entry.target;
+        setTimeout(() => el.classList.add('in-view'), parseInt(el.dataset.animateDelay || 0));
         io.unobserve(el);
       });
     }, { threshold: 0.1 });
-
     document.querySelectorAll('[data-animate]').forEach(el => io.observe(el));
-
     document.querySelectorAll('[data-stagger]').forEach(parent => {
       parent.querySelectorAll('[data-animate]').forEach((child, i) => {
         if (!child.dataset.animateDelay) child.dataset.animateDelay = i * 80;
@@ -1179,7 +990,6 @@
     const sections = document.querySelectorAll('article[id]');
     const links    = document.querySelectorAll('.svc-index-link');
     if (!sections.length || !links.length) return;
-
     const io = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (!entry.isIntersecting) return;
@@ -1189,7 +999,6 @@
         });
       });
     }, { threshold: 0.4 });
-
     sections.forEach(s => io.observe(s));
   })();
 </script>
