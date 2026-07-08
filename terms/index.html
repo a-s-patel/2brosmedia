@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+       PRIMARY META TAGS
+  ============================================================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service | 2Bros Media</title>
+  <meta name="description" content="The terms that govern your use of the 2Bros Media website and our engagement process for client projects.">
+  <meta name="keywords" content="2Bros Media terms of service, terms and conditions, website terms">
+  <meta name="author" content="2Bros Media">
+  <link rel="canonical" href="https://2bros.click/terms/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://2bros.click/terms/">
+  <meta property="og:title" content="Terms of Service | 2Bros Media">
+  <meta property="og:description" content="The terms that govern your use of the 2Bros Media website and our client engagements.">
+  <meta property="og:image" content="https://2bros.click/assets/images/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@2brosmedia">
+  <meta name="twitter:title" content="Terms of Service | 2Bros Media">
+  <meta name="twitter:description" content="The terms that govern your use of the 2Bros Media website and our client engagements.">
+  <meta name="twitter:image" content="https://2bros.click/assets/images/og-image.jpg">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- ============================================================
+       CRITICAL ABOVE-THE-FOLD CSS
+  ============================================================ -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--color-bg);
+      color: var(--color-white);
+      font-family: var(--font-body);
+      font-size: 17px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    button { cursor: pointer; border: none; background: none; font: inherit; }
+    :root {
+      --color-bg:          #050f0a;
+      --color-surface:     #0a1f13;
+      --color-surface-2:   #0f2b1a;
+      --color-emerald:     #00c853;
+      --color-emerald-dim: #00a844;
+      --color-gold:        #ffd700;
+      --color-white:       #f0f8f2;
+      --color-muted:       #7a9b82;
+      --color-border:      #1a3524;
+      --color-danger:      #ff3b30;
+      --font-display: 'Bebas Neue', 'Impact', sans-serif;
+      --font-body:    'DM Sans', 'Helvetica Neue', sans-serif;
+      --font-mono:    'JetBrains Mono', monospace;
+      --nav-h:        72px;
+      --section-pad:  clamp(80px, 10vw, 140px);
+      --container:    1200px;
+      --gutter:       clamp(20px, 5vw, 60px);
+      --radius:       4px;
+      --radius-lg:    12px;
+    }
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      z-index: 1000; height: var(--nav-h);
+      display: flex; align-items: center; padding: 0 var(--gutter);
+      transition: background .3s, backdrop-filter .3s, border-bottom .3s;
+    }
+    .nav.scrolled {
+      background: rgba(5,15,10,0.92);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .nav-inner {
+      width: 100%; max-width: var(--container); margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between; gap: 24px;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+    .nav-logo-mark {
+      width: 36px; height: 36px; background: var(--color-emerald); border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-size: 18px; color: var(--color-bg); letter-spacing: -1px;
+    }
+    .nav-logo-text { font-family: var(--font-display); font-size: 22px; letter-spacing: .05em; color: var(--color-white); }
+    .nav-logo-text span { color: var(--color-emerald); }
+    .nav-links { display: flex; align-items: center; gap: 36px; }
+    .nav-links a {
+      font-family: var(--font-mono); font-size: 12px; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--color-muted); transition: color .2s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--color-white); }
+    .nav-cta { display: flex; align-items: center; gap: 16px; }
+  </style>
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- ============================================================
+       LEGAL PAGE CONTENT STYLES
+  ============================================================ -->
+  <style>
+    .legal-hero {
+      padding: calc(var(--nav-h) + 64px) 0 40px;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .legal-hero-headline {
+      font-family: var(--font-display);
+      font-size: clamp(40px, 7vw, 84px);
+      line-height: 0.95;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      margin-bottom: 16px;
+    }
+    .legal-hero-meta {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      color: var(--color-muted);
+      text-transform: uppercase;
+    }
+    .legal-content { max-width: 780px; }
+    .legal-content h2 {
+      font-family: var(--font-display);
+      font-size: clamp(24px, 3vw, 32px);
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      color: var(--color-emerald);
+      margin: 48px 0 16px;
+    }
+    .legal-content h2:first-child { margin-top: 0; }
+    .legal-content p { color: var(--color-white); margin-bottom: 16px; }
+    .legal-content p.muted { color: var(--color-muted); }
+    .legal-content ul { margin: 0 0 16px; padding-left: 0; }
+    .legal-content ul li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 10px;
+      color: var(--color-white);
+    }
+    .legal-content ul li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--color-emerald);
+      font-family: var(--font-mono);
+    }
+    .legal-content a { color: var(--color-emerald); text-decoration: underline; text-underline-offset: 3px; }
+    .legal-content strong { color: var(--color-white); }
+    .legal-toc {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 20px;
+      margin-top: 28px;
+      padding-top: 24px;
+      border-top: 1px solid var(--color-border);
+    }
+    .legal-toc a {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+    }
+    .legal-toc a:hover { color: var(--color-emerald); }
+  </style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SQSV4N3N9W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-SQSV4N3N9W');
+</script>
+</head>
+
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+============================================================ -->
+<nav class="nav" id="main-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo" aria-label="2Bros Media — Home">
+      <div class="nav-logo-mark" aria-hidden="true">2BM</div>
+      <span class="nav-logo-text">2BROS <span>MEDIA</span></span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="/about/">About</a></li>
+      <li><a href="/services/">Services</a></li>
+      <li><a href="/portfolio/">Portfolio</a></li>
+      <li><a href="/results/">Results</a></li>
+      <li><a href="/faq/">FAQ</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="/contact/" class="btn btn-primary" id="nav-cta-desktop" style="display:none">Apply For Greatness →</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <button class="mobile-menu-close" id="mobile-close" aria-label="Close menu">✕</button>
+  <nav>
+    <ul class="mobile-menu-links" role="list">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/services/">Services</a></li>
+      <li><a href="/portfolio/">Portfolio</a></li>
+      <li><a href="/results/">Results</a></li>
+      <li><a href="/faq/">FAQ</a></li>
+    </ul>
+    <a href="/contact/" class="btn btn-primary mobile-menu-cta">Apply For Greatness →</a>
+  </nav>
+</div>
+
+<!-- ============================================================
+     LEGAL HERO
+============================================================ -->
+<section class="legal-hero">
+  <div class="container">
+    <span class="legal-hero-meta">Effective July 7, 2026</span>
+    <h1 class="legal-hero-headline">Terms of Service</h1>
+    <p class="legal-hero-meta" style="margin-top:8px">2Bros Media LLC · 2bros.click</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     LEGAL CONTENT
+============================================================ -->
+<section class="section-pad">
+  <div class="container">
+    <div class="legal-content">
+
+      <p>These Terms of Service ("Terms") govern your use of 2bros.click (the "Site") and your engagement with 2Bros Media LLC ("2Bros Media," "we," "us," or "our") for services. By using the Site or submitting a consultation request, you agree to these Terms.</p>
+
+      <div class="legal-toc">
+        <a href="#using-the-site">Using the Site</a>
+        <a href="#intellectual-property">Intellectual Property</a>
+        <a href="#consultations">Consultations &amp; Proposals</a>
+        <a href="#client-engagements">Client Engagements</a>
+        <a href="#no-guarantees">No Guarantees</a>
+        <a href="#third-party">Third-Party Services</a>
+        <a href="#liability">Limitation of Liability</a>
+        <a href="#termination">Termination</a>
+        <a href="#governing-law">Governing Law</a>
+        <a href="#changes">Changes to These Terms</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+
+      <h2 id="using-the-site">Using the Site</h2>
+      <p>You may browse the Site and submit inquiries for lawful purposes only. You agree not to misuse the Site — including attempting to gain unauthorized access to it, disrupting its operation, scraping content at scale, or using it to transmit harmful code.</p>
+
+      <h2 id="intellectual-property">Intellectual Property</h2>
+      <p>All content on this Site — including copy, design, graphics, logos, and the 2Bros Media brand itself — is owned by 2Bros Media or used with permission, and is protected by copyright and trademark law. You may not reproduce, distribute, or create derivative works from our content without our written permission.</p>
+      <p>Work we create for clients as part of a paid engagement is governed by the specific agreement for that project, which takes precedence over these general Terms with respect to that work.</p>
+
+      <h2 id="consultations">Consultations &amp; Proposals</h2>
+      <p>Submitting our contact form requests a free consultation. It does not create a client relationship, a contract, or any obligation on either side. A formal engagement begins only once both parties agree to a written proposal or statement of work covering scope, deliverables, timeline, and pricing.</p>
+
+      <h2 id="client-engagements">Client Engagements</h2>
+      <p>Once you engage us for a project, the specific terms of that engagement — including payment schedule, deliverables, revisions, timelines, and ownership of final assets — are set out in your individual project agreement or statement of work. These Terms apply to your general use of the Site; they don't replace or override the terms of a signed project agreement.</p>
+
+      <h2 id="no-guarantees">No Guarantees</h2>
+      <p>We're confident in our work, and the results referenced on this Site reflect real client outcomes. But marketing and growth results depend on many factors outside our control — market conditions, your industry, your existing brand equity, ad platform algorithms, and more. Nothing on this Site is a guarantee of specific results for your business.</p>
+
+      <h2 id="third-party">Third-Party Services</h2>
+      <p>This Site uses third-party services including Formspree for form processing, Google Analytics and Google Search Console for site performance, and GitHub Pages for hosting. Your use of features connected to these services is also subject to those providers' own terms and policies.</p>
+
+      <h2 id="liability">Limitation of Liability</h2>
+      <p>To the fullest extent permitted by law, 2Bros Media is not liable for any indirect, incidental, or consequential damages arising from your use of the Site. The Site and its content are provided "as is" without warranties of any kind, express or implied.</p>
+
+      <h2 id="termination">Termination</h2>
+      <p>We may suspend or restrict access to the Site at any time, for any reason, without notice — for example, to protect the Site from misuse or abuse.</p>
+
+      <h2 id="governing-law">Governing Law</h2>
+      <p>These Terms are governed by the laws of the state in which 2Bros Media is registered, without regard to conflict-of-law principles.</p>
+
+      <h2 id="changes">Changes to These Terms</h2>
+      <p>We may update these Terms from time to time. The "Effective" date at the top of this page reflects the most recent version. Continued use of the Site after changes take effect means you accept the updated Terms.</p>
+
+      <h2 id="contact">Contact Us</h2>
+      <p>Questions about these Terms? Reach out through our <a href="/contact/">contact page</a> and we'll get back to you within 24 hours.</p>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo" aria-label="2Bros Media — Home">
+          <div class="nav-logo-mark" aria-hidden="true">2BM</div>
+          <span class="nav-logo-text">2BROS <span>MEDIA</span></span>
+        </a>
+        <p class="footer-tagline">Your brand, but actually good.</p>
+        <a href="https://linkedin.com/company/2brosmedia" class="footer-social" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M7 10v7M7 7v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M11 17v-4c0-1.5 1-2 2-2s2 .5 2 2v4M11 10v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+      </div>
+    </div>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <div class="footer-nav-col">
+        <h4 class="footer-nav-heading">Pages</h4>
+        <ul role="list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/services/">Services</a></li>
+          <li><a href="/portfolio/">Portfolio</a></li>
+          <li><a href="/results/">Results</a></li>
+          <li><a href="/faq/">FAQ</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav-col">
+        <h4 class="footer-nav-heading">Services</h4>
+        <ul role="list">
+          <li><a href="/services/#performance-marketing">Performance Marketing</a></li>
+          <li><a href="/services/#user-acquisition">User Acquisition</a></li>
+          <li><a href="/services/#growth-strategy">Growth Strategy</a></li>
+          <li><a href="/services/#social-media">Social Media</a></li>
+          <li><a href="/services/#brand-identity">Brand Identity</a></li>
+          <li><a href="/services/#aso">App Store Optimization</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="footer-cta-col">
+      <h4 class="footer-nav-heading">Get Started</h4>
+      <p class="footer-cta-text">Stop suffering. Free consultation. We'll show you exactly what your brand is missing.</p>
+      <a href="/contact/" class="btn btn-primary" style="margin-top:16px">Apply For Greatness →</a>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 2Bros Media. All rights reserved. <span class="footer-built">Built different.</span></p>
+      <div class="footer-legal">
+        <a href="/privacy/">Privacy Policy</a>
+        <span aria-hidden="true">·</span>
+        <a href="/terms/">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     JAVASCRIPT
+============================================================ -->
+<script>
+  // ---- STICKY NAV ----
+  (function() {
+    const nav = document.getElementById('main-nav');
+    const cta = document.getElementById('nav-cta-desktop');
+    let ticking = false;
+    function onScroll() {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const past = window.scrollY > 50;
+          nav.classList.toggle('scrolled', past);
+          if (cta) cta.style.display = past ? 'inline-flex' : 'none';
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  })();
+
+  // ---- MOBILE MENU ----
+  (function() {
+    const hamburger  = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeBtn   = document.getElementById('mobile-close');
+    const open  = () => { mobileMenu.classList.add('open');    hamburger.setAttribute('aria-expanded','true');  document.body.style.overflow='hidden'; };
+    const close = () => { mobileMenu.classList.remove('open'); hamburger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; };
+    hamburger?.addEventListener('click', open);
+    closeBtn?.addEventListener('click', close);
+    mobileMenu?.addEventListener('click', e => { if (e.target === mobileMenu) close(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+  })();
+</script>
+
+<script defer src="/assets/js/tracking.js"></script>
+</body>
+</html>
